@@ -1,0 +1,7 @@
+node_modules/
+dist/
+dist-demo/
+*.tgz
+coverage/
+.DS_Store
+__pycache__/

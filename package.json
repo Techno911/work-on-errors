@@ -1,0 +1,15 @@
+{
+  "name": "work-on-errors",
+  "version": "8.7.0",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend",
+    "packages/ui"
+  ],
+  "scripts": {
+    "bootstrap": "bash scripts/bootstrap-env.sh",
+    "build": "npm run build -w packages/ui && npm run build -w backend && npm run build -w frontend",
+    "test": "npm test -w backend"
+  }
+}

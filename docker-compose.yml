@@ -1,0 +1,81 @@
+# Локальный изолированный контур. Порты слушают только 127.0.0.1.
+# Запуск: bash scripts/bootstrap-env.sh && docker compose up -d --build
+name: ${COMPOSE_PROJECT_NAME:-work-on-errors-local}
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${DB_NAME:-ro_db}
+      POSTGRES_USER: ${DB_USERNAME:-ro_user}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:?задайте в .env — см. scripts/bootstrap-env.sh}
+    ports:
+      - "127.0.0.1:${DB_PORT_OUT:-15432}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USERNAME:-ro_user} -d ${DB_NAME:-ro_db}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:${BACKEND_PORT_OUT:-13000}:3000"
+    environment:
+      - NODE_ENV=${NODE_ENV:-development}
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_USERNAME=${DB_USERNAME:-ro_user}
+      - DB_PASSWORD=${DB_PASSWORD:?задайте в .env}
+      - DB_NAME=${DB_NAME:-ro_db}
+      - DB_SYNC=${DB_SYNC:-}
+      - JWT_SECRET=${JWT_SECRET:?задайте в .env}
+      - JWT_REFRESH_SECRET=${JWT_REFRESH_SECRET:?задайте в .env}
+      - JWT_ACCESS_EXPIRATION=${JWT_ACCESS_EXPIRATION:-15m}
+      - JWT_REFRESH_EXPIRATION=${JWT_REFRESH_EXPIRATION:-7d}
+      - FRONTEND_URL=${FRONTEND_URL:-http://localhost:15173}
+      - APP_URL=${APP_URL:-http://localhost:15173}
+      - MAIL_FROM=${MAIL_FROM:-noreply@example.invalid}
+      - SEED_ADMIN_PASSWORD=${SEED_ADMIN_PASSWORD:-}
+      - SEED_DEMO_PASSWORD=${SEED_DEMO_PASSWORD:-}
+      - CRM_ENCRYPTION_KEY=${CRM_ENCRYPTION_KEY:-}
+      - EXECUTOR_INNS=${EXECUTOR_INNS:-}
+      - EXECUTOR_NAME_PATTERN=${EXECUTOR_NAME_PATTERN:-}
+      - EXECUTOR_ADDRESS_PATTERN=${EXECUTOR_ADDRESS_PATTERN:-}
+      - STT_BASE_URL=${STT_BASE_URL:-}
+      - OLLAMA_BASE_URL=${OLLAMA_BASE_URL:-}
+      - OLLAMA_GENERATE_MODEL=${OLLAMA_GENERATE_MODEL:-}
+      - OLLAMA_EMBED_MODEL=${OLLAMA_EMBED_MODEL:-}
+      - SALUTE_AUTH_KEY=${SALUTE_AUTH_KEY:-}
+      - SALUTE_SCOPE=${SALUTE_SCOPE:-SALUTE_SPEECH_PERS}
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN:-}
+      - SUPERADMIN_TG_CHAT_ID=${SUPERADMIN_TG_CHAT_ID:-}
+      - SMTP_HOST=${SMTP_HOST:-}
+      - SMTP_PORT=${SMTP_PORT:-25}
+      - SMTP_USER=${SMTP_USER:-}
+      - SMTP_PASS=${SMTP_PASS:-}
+      - PORT=3000
+    volumes:
+      - uploads_data:/app/uploads
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:${FRONTEND_PORT_OUT:-15173}:80"
+
+volumes:
+  postgres_data:
+  uploads_data:

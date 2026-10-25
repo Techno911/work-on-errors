@@ -1,0 +1,72 @@
+
+> chip-frontend@8.5.0 build
+> node scripts/version-sync.mjs && node scripts/no-lossy-cn.mjs && node scripts/no-raw-select.mjs && node scripts/no-raw-input.mjs && node scripts/no-raw-color.mjs && node scripts/no-raw-button.mjs && node scripts/no-raw-card.mjs && node scripts/no-standalone-badge.mjs && node scripts/one-focus-ring.mjs && node scripts/no-accent-drift.mjs && node scripts/no-offscale.mjs && node scripts/no-white-on-fill.mjs && node scripts/no-faint-as-text.mjs && node scripts/no-em-dash.mjs && node scripts/no-add-entry-on-closed-sprint.mjs && node scripts/sprint-board-asks-current.mjs && node scripts/release-notes-check.mjs && node scripts/static-brand-assets-check.mjs && tsc -b && vite build && node scripts/build-og-routes.mjs
+
+✓ version-sync: v8.5.0 (до переезда, потолок 9.9.9; носители синхронны)
+✓ no-lossy-cn: 74 вызова cn() проверены; настроенный merger не теряет разные свойства; дефолтный ломал 29 мест
+✓ no-raw-select: сырых <select> нет
+✓ no-raw-input: 0 блокеров; {}
+✓ no-raw-color: 13 самопроверок
+✓ no-raw-color: 0 блокеров; {}
+✓ no-raw-button: 0 блокеров; {}
+✓ no-raw-card: 0 блокеров; {}
+✓ no-standalone-badge: 0 блокеров; {}
+✓ one-focus-ring: 20 самопроверок
+✓ one-focus-ring: 0 блокеров; {}
+✓ no-accent-drift: 26 самопроверки сломом и восстановлением
+✓ no-accent-drift: единственное семейство (12 ролей), значения и назначения подтверждены (733 обращений)
+✓ no-offscale: 0 нарушений шкалы; допуска долга нет
+✓ no-white-on-fill: 28 самопроверок, включая смену значения и восстановление
+✓ no-white-on-fill: 0 блокеров; {}
+✓ no-faint-as-text: нарушений нет вовсе. Снимок долга можно удалить, и замок станет обычным запретом.
+✓ no-em-dash: длинного тире в клиентском тексте нет
+✓ no-add-entry-on-closed-sprint: 1 рендер(ов) формы и 2 кнопк(и) закрыты статусом спринта
+✓ sprint-board-asks-current: текущая неделя спрашивается всегда, выход к ней виден
+✓ release-notes: v8.5.0 — молча (решение зафиксировано)
+✓ static-brand-assets: 2 OG-пересборки, 1 статических знаков; checksum и Linux-пересборки совпали
+vite v6.4.1 building for production...
+(node:19993) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+transforming...
+✓ 2430 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                  3.23 kB │ gzip:   1.17 kB
+dist/assets/index-Cn316dgf.css                  62.96 kB │ gzip:  11.20 kB
+dist/assets/invites-D2HSXMMJ.js                  0.23 kB │ gzip:   0.18 kB
+dist/assets/gamification-ObpIKznT.js             0.27 kB │ gzip:   0.18 kB
+dist/assets/error-tags-BwWr1GmW.js               0.29 kB │ gzip:   0.20 kB
+dist/assets/rop-bonus-offer-HffixHGZ.js          0.43 kB │ gzip:   0.21 kB
+dist/assets/transcription-BnbnXzOm.js            0.52 kB │ gzip:   0.27 kB
+dist/assets/analytics-CxxZ1gIj.js                0.63 kB │ gzip:   0.28 kB
+dist/assets/attestation-CpFbuSGk.js              1.04 kB │ gzip:   0.37 kB
+dist/assets/CompanyStatusBadge-B0KlyZv9.js       1.16 kB │ gzip:   0.56 kB
+dist/assets/CompanyPicker-DRZg4fUT.js            1.55 kB │ gzip:   0.82 kB
+dist/assets/TelegramLinkButton-ZweLDZ0k.js       1.91 kB │ gzip:   1.04 kB
+dist/assets/AttestationResultPage-Cutxd9f_.js    2.36 kB │ gzip:   1.12 kB
+dist/assets/badge-BKjR_gMw.js                    2.79 kB │ gzip:   0.95 kB
+dist/assets/AttestationTakePage-C1m-3Nqb.js      3.54 kB │ gzip:   1.73 kB
+dist/assets/ResetPasswordPage-DB5JENld.js        3.62 kB │ gzip:   1.59 kB
+dist/assets/StaffSummary-CcsWAL7Z.js             3.72 kB │ gzip:   1.25 kB
+dist/assets/ActivatePage-Cf5vvxu1.js             4.71 kB │ gzip:   2.04 kB
+dist/assets/ProgressIndicator-C9qLoY5p.js        4.90 kB │ gzip:   1.83 kB
+dist/assets/PdnConsentPage-znLvT4o-.js           5.02 kB │ gzip:   2.02 kB
+dist/assets/AttestationReviewPage-CjWmVDV0.js    5.41 kB │ gzip:   2.20 kB
+dist/assets/InvitePage-qfLQh8II.js               8.56 kB │ gzip:   2.84 kB
+dist/assets/UserTour-AjoyMteP.js                 9.93 kB │ gzip:   3.78 kB
+dist/assets/AttestationPage-CXAKKN3X.js         11.27 kB │ gzip:   3.77 kB
+dist/assets/RopBonusOfferPage-DSDfXFbX.js       11.85 kB │ gzip:   4.00 kB
+dist/assets/OfferPage-BTWIIXd-.js               14.03 kB │ gzip:   4.25 kB
+dist/assets/PlaybookPage-fKfLhDYf.js            26.50 kB │ gzip:   7.24 kB
+dist/assets/state-vendor-CFXkNvLl.js            37.76 kB │ gzip:  15.12 kB
+dist/assets/react-vendor-Bem4zXrR.js            50.01 kB │ gzip:  17.62 kB
+dist/assets/ui-vendor-BdhElzHU.js               73.26 kB │ gzip:  17.06 kB
+dist/assets/CompanyDetailPage-DZNbBUu6.js       79.13 kB │ gzip:  19.64 kB
+dist/assets/ManualPage-CE9MI3eX.js              79.56 kB │ gzip:  21.90 kB
+dist/assets/DashboardPage-Dmal2tHg.js           97.22 kB │ gzip:  24.83 kB
+dist/assets/SprintBoardPage-CwgrWEvB.js        101.45 kB │ gzip:  26.06 kB
+dist/assets/SettingsPage-DBjRt_Cp.js           115.83 kB │ gzip:  24.74 kB
+dist/assets/index-CZzjx3Ni.js                  300.26 kB │ gzip:  94.36 kB
+dist/assets/AnalyticsPage-Dt7sozcd.js          400.64 kB │ gzip: 118.25 kB
+✓ built in 1.91s
+[og-routes] crm-setup.html — своя OG-карточка

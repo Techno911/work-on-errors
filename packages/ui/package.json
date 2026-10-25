@@ -1,0 +1,62 @@
+{
+  "name": "@chirkov/shell",
+  "version": "0.10.0",
+  "description": "Общая оболочка платформ Чирков и партнёры",
+  "private": true,
+  "license": "UNLICENSED",
+  "type": "module",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./styles.css": "./dist/styles.css",
+    "./theme.css": "./dist/theme.css",
+    "./package.json": "./package.json",
+    "./gate/*": "./gate/*"
+  },
+  "scripts": {
+    "tokens:bootstrap": "node scripts/tokens-bootstrap.mjs",
+    "tokens:build": "node scripts/tokens-build.mjs",
+    "tokens:check": "node scripts/tokens-check.mjs",
+    "build": "node scripts/font-integrity.mjs src/fonts && tsup && node scripts/copy-css.mjs && node scripts/font-integrity.mjs dist/fonts",
+    "test": "vitest run",
+    "test:types": "tsc -p tests/types/tsconfig.json",
+    "test:hover": "node scripts/hover-contract.mjs --selftest && node scripts/hover-contract.mjs",
+    "test:topbar": "node scripts/topbar-mobile-contract.mjs --selftest && node scripts/topbar-mobile-contract.mjs",
+    "test:shell-canon": "node gate/оболочка-канон.mjs --selftest",
+    "test:gate": "node scripts/no-off-scale-literals.mjs",
+    "test:fonts": "node scripts/font-integrity.mjs src/fonts",
+    "test:react": "node scripts/test-react-majors.mjs"
+  },
+  "peerDependencies": {
+    "react": ">=18 <20",
+    "react-dom": ">=18 <20"
+  },
+  "devDependencies": {
+    "@fontsource/inter": "^5.3.0",
+    "@fontsource/oswald": "^5.3.0",
+    "@testing-library/jest-dom": "^6.8.0",
+    "@testing-library/react": "^16.3.0",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react": "^4.7.0",
+    "jsdom": "^26.1.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.5",
+    "vitest": "^3.2.4"
+  },
+  "dependencies": {
+    "lucide-react": "^0.544.0",
+    "sonner": "^2.0.8"
+  }
+}

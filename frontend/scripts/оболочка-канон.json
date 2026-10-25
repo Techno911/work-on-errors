@@ -1,0 +1,36 @@
+{
+  "корень": "..",
+  "названиеПлатформы": "Работа над ошибками",
+  "переменнаяШирины": "--spacing-sidebar",
+  "файлы": {
+    "оболочка": [
+      "src/components/layout/Sidebar.tsx",
+      "src/components/layout/AppLayout.tsx",
+      "src/config/nav.ts"
+    ],
+    "бренд": [
+      "src/components/ui/LogoMark.tsx"
+    ],
+    "стили": [
+      "src/index.css"
+    ],
+    "меню": [
+      "src/config/nav.ts"
+    ],
+    "вход": [
+      "src/pages/LoginPage.tsx"
+    ],
+    "html": [
+      "index.html"
+    ],
+    "значок": [
+      "public/favicon.svg"
+    ],
+    "карточка": [
+      "scripts/og-image.source.html"
+    ]
+  },
+  "канонВхода": true,
+  "имяКомпании": "Работа над ошибками",
+  "огКартинкаОбязательна": false
+}

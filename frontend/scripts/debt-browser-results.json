@@ -1,0 +1,5827 @@
+{
+ "baseline": "e1aed2e",
+ "capturedAt": "2026-09-14T14:21:59.173Z",
+ "sourceHashes": {
+  "components/admin/CreateCompanyModal.tsx": "b2bfbcbe03066e45f4c198566728640f7e0868aef6c4b08d63bd9b012c578799",
+  "components/admin/NormPresetPicker.tsx": "23ba3256702831ea37072925e848218af0c3fd137a0b903d8725f6e333bc1958",
+  "components/analytics/ErrorFrequencyChart.tsx": "ee562e83b0885f05f34ea633cb0f06fe15a5b2882f3e00f1737a29901474879a",
+  "components/analytics/TagManager.tsx": "2dbcb78fd3348e639c65a559334d15b81805ef4f207669c97307a65368de05d4",
+  "components/attestation/GenerateTestDialog.tsx": "4aeb8ac1b3eae5c0f2cdd0987905f84aa6495da8c89431534e0545629177686a",
+  "components/crm/CrmConnectWizard.tsx": "7f848a1bd22df7cd75fb2cb58b79b2f4cf35fecdd7ac8de194f4cf973d41cad1",
+  "components/dashboard/CrmHintCard.tsx": "6ea90b2f75239d2be6bfe0c40cbc1ca43e45de29475fe43553e4ed276321c64c",
+  "components/gamification/GamificationSettingsPanel.tsx": "5368593707b1ca029ba4e9e1a24212552d5a6e21971d26fc6164a4c37d9282c4",
+  "components/playbook/PlaybookCardItem.tsx": "3c95bcde627d779ca8e32f0f400d0ef897d0e2bb02a909e4a9f8266ae5854d1e",
+  "components/playbook/PlaybookConfirmDialog.tsx": "4ce2dd0f62ccca418ecdded1f6d20c0b4f81ea6dd1a142968619acc01b4483c0",
+  "components/playbook/PlaybookDismissDialog.tsx": "94e275e357e30e322e8bb9d2e3c9c02f76bdd8252616425623138e2d53cb8957",
+  "components/playbook/PlaybookManualCardDialog.tsx": "cd4f9134137238ed1cd3dc95e80397aeb1a656581f4b11005aeb31e9222b01d4",
+  "components/settings/RopBonusSettings.tsx": "cbae374ba4c5f0683d02bb91b320e6fa83b43e93cad9181938d6c630dff9d1ad",
+  "components/settings/SettingsPresets.tsx": "fe53c7c0edde70588d2e03a48f33724677cc26d0dc565bd1612a751fde9a0c94",
+  "components/settings/TranscriptionSettingsCard.tsx": "6ed66af2c5f18e126d02f60edb2a01a255dced452553d3a2f3870e4899460832",
+  "components/sprint/AddEntryForm.tsx": "07ba5696a4df0ec81babb62adfbabb91746b9f8f96ad4b9a290dabb592fdae3f",
+  "components/sprint/EntryCard.tsx": "0eec8de682d8df5fcae237585f4eac4354822ca91b55fad2ec2c4fcc573ccebe",
+  "components/sprint/ManagerSection.tsx": "fba0db4527468bdedd99e63fad85b9b2438331d8980c748ef4d8ad749d845426",
+  "components/sprint/ReviewerForm.tsx": "3f70fb12fc034efb24467b75795ddc4b0fb98a58e0de61c87bbf95dd3390efce",
+  "components/sprint/SelfReviewForm.tsx": "7bd78c4bcab72b021da899de9b7c7c665bda784b24784682bdfd304f4259aacd",
+  "components/sprint/SprintHeader.tsx": "420037405039b0fcb5dd0c6a7127549c6a4482dee65806b16726b173a14820bf",
+  "components/ui/InfoHint.tsx": "d9c7981688adec45c38bc34e57d164df33a417c40ea39745943b13059197708e",
+  "components/ui/input.tsx": "eeee11fc0427ccc517e5cec0502dd11ab5a9f56e545adae9f1e1a0ebfb40daf2",
+  "pages/AttestationTakePage.tsx": "3537d3ee34d2d288efd8d6b963877c3b3636b846555774c30cf18965cb44ec8a",
+  "pages/LoginPage.tsx": "ee3da1887300a71c85244c7ea0ea00dd2bda21e748cedc244d1d0165f003ef25",
+  "pages/SettingsPage.tsx": "0a849ba478b1bfa5f57a0a033d20022e7abdaada85d51376cac0dd3209748a13",
+  "pages/admin/CompanyDetailPage.tsx": "c28c0dc0e8ac77d7cfcc4d21da1e4d0d68b9a0eda9b918355ee1562bfe7ef615",
+  "components/ui/button.tsx": "45d4bf3daa83520d974ada7c07aafae89bbbb3485105527afca8fb2718106dc1",
+  "index.css": "d68c81672869329861f641dbc323dcdd4fb00ad2bbc3b9e26f6d9ea375a52adf"
+ },
+ "groups": {
+  "submitButton": {
+   "описание": "SelfReviewForm.tsx, реальный Button+cn, canSubmit=true submitting=false, AST-извлечение JSX",
+   "before": {
+    "bgHex": "#22C55E",
+    "fgHex": "#FFFFFF",
+    "box": {
+     "width": 133.125,
+     "height": 38.84375,
+     "padding": "10px 0px",
+     "fontSize": "13px",
+     "lineHeight": "18.85px",
+     "borderWidth": "0px",
+     "borderRadius": "10px"
+    },
+    "text": "Отправить на ревью",
+    "contrast": 2.2786093403477246
+   },
+   "after": {
+    "bgHex": "#15803D",
+    "fgHex": "#FFFFFF",
+    "box": {
+     "width": 133.125,
+     "height": 38.84375,
+     "padding": "10px 0px",
+     "fontSize": "13px",
+     "lineHeight": "18.85px",
+     "borderWidth": "0px",
+     "borderRadius": "10px"
+    },
+    "text": "Отправить на ревью",
+    "contrast": 5.0155974781114745
+   }
+  },
+  "inputPairs": {
+   "описание": "старый vs новый input.tsx, реальные Input/Textarea/Select, normal и error",
+   "pairs": [
+    {
+     "name": "Input:normal",
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(249, 228, 212) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#F9E4D4"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 217,
+       "height": 45.1875,
+       "padding": "10px 14px",
+       "fontSize": "16px",
+       "lineHeight": "23.2px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 217,
+       "height": 45.1875,
+       "padding": "10px 14px",
+       "fontSize": "16px",
+       "lineHeight": "23.2px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     }
+    },
+    {
+     "name": "Input:error",
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(254, 242, 242) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#FEF2F2"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 217,
+       "height": 45.1875,
+       "padding": "10px 14px",
+       "fontSize": "16px",
+       "lineHeight": "23.2px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 217,
+       "height": 45.1875,
+       "padding": "10px 14px",
+       "fontSize": "16px",
+       "lineHeight": "23.2px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     }
+    },
+    {
+     "name": "Textarea:normal",
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(249, 228, 212) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#F9E4D4"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 226,
+       "height": 100,
+       "padding": "10px 14px",
+       "fontSize": "16px",
+       "lineHeight": "23.2px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 226,
+       "height": 100,
+       "padding": "10px 14px",
+       "fontSize": "16px",
+       "lineHeight": "23.2px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     }
+    },
+    {
+     "name": "Textarea:error",
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(254, 242, 242) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#FEF2F2"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 226,
+       "height": 100,
+       "padding": "10px 14px",
+       "fontSize": "16px",
+       "lineHeight": "23.2px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 226,
+       "height": 100,
+       "padding": "10px 14px",
+       "fontSize": "16px",
+       "lineHeight": "23.2px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     }
+    },
+    {
+     "name": "Select:normal",
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(249, 228, 212) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#F9E4D4"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 66,
+       "height": 45.1875,
+       "padding": "10px 40px 10px 14px",
+       "fontSize": "16px",
+       "lineHeight": "23.2px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 66,
+       "height": 45.1875,
+       "padding": "10px 40px 10px 14px",
+       "fontSize": "16px",
+       "lineHeight": "23.2px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     }
+    },
+    {
+     "name": "Select:error",
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(254, 242, 242) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#FEF2F2"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 66,
+       "height": 45.1875,
+       "padding": "10px 40px 10px 14px",
+       "fontSize": "16px",
+       "lineHeight": "23.2px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 66,
+       "height": 45.1875,
+       "padding": "10px 40px 10px 14px",
+       "fontSize": "16px",
+       "lineHeight": "23.2px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     }
+    }
+   ]
+  },
+  "removedFocusRings": {
+   "описание": "изолированные фрагменты (не страницы): 48 уникальных литералов, покрывающих все 84 focus-tied вхождений из 84; before = реальный литерал из e1aed2e, after = соответствующий литерал ИЗ ТЕКУЩЕГО src (сопоставлено по строке+порядку в AST, не пересчитано регэкспом)",
+   "уникальных_литералов": 48,
+   "охватывает_вхождений_из_84": 84,
+   "все_84_вхождения": [
+    {
+     "file": "src/components/admin/CreateCompanyModal.tsx",
+     "line": 78
+    },
+    {
+     "file": "src/components/admin/CreateCompanyModal.tsx",
+     "line": 115
+    },
+    {
+     "file": "src/components/admin/CreateCompanyModal.tsx",
+     "line": 137
+    },
+    {
+     "file": "src/components/analytics/ErrorFrequencyChart.tsx",
+     "line": 100
+    },
+    {
+     "file": "src/components/analytics/TagManager.tsx",
+     "line": 168
+    },
+    {
+     "file": "src/components/analytics/TagManager.tsx",
+     "line": 176
+    },
+    {
+     "file": "src/components/attestation/GenerateTestDialog.tsx",
+     "line": 61
+    },
+    {
+     "file": "src/components/attestation/GenerateTestDialog.tsx",
+     "line": 74
+    },
+    {
+     "file": "src/components/crm/CrmConnectWizard.tsx",
+     "line": 144
+    },
+    {
+     "file": "src/components/crm/CrmConnectWizard.tsx",
+     "line": 220
+    },
+    {
+     "file": "src/components/crm/CrmConnectWizard.tsx",
+     "line": 235
+    },
+    {
+     "file": "src/components/dashboard/CrmHintCard.tsx",
+     "line": 65
+    },
+    {
+     "file": "src/components/dashboard/CrmHintCard.tsx",
+     "line": 98
+    },
+    {
+     "file": "src/components/dashboard/CrmHintCard.tsx",
+     "line": 112
+    },
+    {
+     "file": "src/components/gamification/GamificationSettingsPanel.tsx",
+     "line": 95
+    },
+    {
+     "file": "src/components/gamification/GamificationSettingsPanel.tsx",
+     "line": 124
+    },
+    {
+     "file": "src/components/playbook/PlaybookCardItem.tsx",
+     "line": 83
+    },
+    {
+     "file": "src/components/playbook/PlaybookConfirmDialog.tsx",
+     "line": 66
+    },
+    {
+     "file": "src/components/playbook/PlaybookConfirmDialog.tsx",
+     "line": 84
+    },
+    {
+     "file": "src/components/playbook/PlaybookDismissDialog.tsx",
+     "line": 71
+    },
+    {
+     "file": "src/components/playbook/PlaybookManualCardDialog.tsx",
+     "line": 62
+    },
+    {
+     "file": "src/components/playbook/PlaybookManualCardDialog.tsx",
+     "line": 73
+    },
+    {
+     "file": "src/components/settings/RopBonusSettings.tsx",
+     "line": 96
+    },
+    {
+     "file": "src/components/settings/RopBonusSettings.tsx",
+     "line": 123
+    },
+    {
+     "file": "src/components/settings/RopBonusSettings.tsx",
+     "line": 134
+    },
+    {
+     "file": "src/components/settings/RopBonusSettings.tsx",
+     "line": 158
+    },
+    {
+     "file": "src/components/settings/RopBonusSettings.tsx",
+     "line": 159
+    },
+    {
+     "file": "src/components/settings/RopBonusSettings.tsx",
+     "line": 173
+    },
+    {
+     "file": "src/components/settings/RopBonusSettings.tsx",
+     "line": 174
+    },
+    {
+     "file": "src/components/settings/RopBonusSettings.tsx",
+     "line": 242
+    },
+    {
+     "file": "src/components/settings/RopBonusSettings.tsx",
+     "line": 264
+    },
+    {
+     "file": "src/components/settings/TranscriptionSettingsCard.tsx",
+     "line": 99
+    },
+    {
+     "file": "src/components/sprint/AddEntryForm.tsx",
+     "line": 366
+    },
+    {
+     "file": "src/components/sprint/AddEntryForm.tsx",
+     "line": 397
+    },
+    {
+     "file": "src/components/sprint/AddEntryForm.tsx",
+     "line": 431
+    },
+    {
+     "file": "src/components/sprint/AddEntryForm.tsx",
+     "line": 447
+    },
+    {
+     "file": "src/components/sprint/AddEntryForm.tsx",
+     "line": 489
+    },
+    {
+     "file": "src/components/sprint/AddEntryForm.tsx",
+     "line": 579
+    },
+    {
+     "file": "src/components/sprint/AddEntryForm.tsx",
+     "line": 603
+    },
+    {
+     "file": "src/components/sprint/AddEntryForm.tsx",
+     "line": 647
+    },
+    {
+     "file": "src/components/sprint/EntryCard.tsx",
+     "line": 129
+    },
+    {
+     "file": "src/components/sprint/ManagerSection.tsx",
+     "line": 124
+    },
+    {
+     "file": "src/components/sprint/ManagerSection.tsx",
+     "line": 136
+    },
+    {
+     "file": "src/components/sprint/ManagerSection.tsx",
+     "line": 143
+    },
+    {
+     "file": "src/components/sprint/ReviewerForm.tsx",
+     "line": 177
+    },
+    {
+     "file": "src/components/sprint/ReviewerForm.tsx",
+     "line": 235
+    },
+    {
+     "file": "src/components/sprint/ReviewerForm.tsx",
+     "line": 293
+    },
+    {
+     "file": "src/components/sprint/ReviewerForm.tsx",
+     "line": 325
+    },
+    {
+     "file": "src/components/sprint/SelfReviewForm.tsx",
+     "line": 204
+    },
+    {
+     "file": "src/components/sprint/SelfReviewForm.tsx",
+     "line": 224
+    },
+    {
+     "file": "src/components/sprint/SelfReviewForm.tsx",
+     "line": 244
+    },
+    {
+     "file": "src/components/sprint/SprintHeader.tsx",
+     "line": 37
+    },
+    {
+     "file": "src/components/sprint/SprintHeader.tsx",
+     "line": 58
+    },
+    {
+     "file": "src/components/sprint/SprintHeader.tsx",
+     "line": 90
+    },
+    {
+     "file": "src/components/ui/InfoHint.tsx",
+     "line": 18
+    },
+    {
+     "file": "src/components/ui/input.tsx",
+     "line": 12
+    },
+    {
+     "file": "src/components/ui/input.tsx",
+     "line": 31
+    },
+    {
+     "file": "src/components/ui/input.tsx",
+     "line": 55
+    },
+    {
+     "file": "src/components/ui/input.tsx",
+     "line": 88
+    },
+    {
+     "file": "src/pages/AttestationTakePage.tsx",
+     "line": 109
+    },
+    {
+     "file": "src/pages/LoginPage.tsx",
+     "line": 186
+    },
+    {
+     "file": "src/pages/SettingsPage.tsx",
+     "line": 101
+    },
+    {
+     "file": "src/pages/SettingsPage.tsx",
+     "line": 772
+    },
+    {
+     "file": "src/pages/SettingsPage.tsx",
+     "line": 779
+    },
+    {
+     "file": "src/pages/SettingsPage.tsx",
+     "line": 817
+    },
+    {
+     "file": "src/pages/SettingsPage.tsx",
+     "line": 818
+    },
+    {
+     "file": "src/pages/SettingsPage.tsx",
+     "line": 1626
+    },
+    {
+     "file": "src/pages/SettingsPage.tsx",
+     "line": 1633
+    },
+    {
+     "file": "src/pages/SettingsPage.tsx",
+     "line": 1688
+    },
+    {
+     "file": "src/pages/SettingsPage.tsx",
+     "line": 1694
+    },
+    {
+     "file": "src/pages/admin/CompanyDetailPage.tsx",
+     "line": 142
+    },
+    {
+     "file": "src/pages/admin/CompanyDetailPage.tsx",
+     "line": 153
+    },
+    {
+     "file": "src/pages/admin/CompanyDetailPage.tsx",
+     "line": 366
+    },
+    {
+     "file": "src/pages/admin/CompanyDetailPage.tsx",
+     "line": 447
+    },
+    {
+     "file": "src/pages/admin/CompanyDetailPage.tsx",
+     "line": 453
+    },
+    {
+     "file": "src/pages/admin/CompanyDetailPage.tsx",
+     "line": 459
+    },
+    {
+     "file": "src/pages/admin/CompanyDetailPage.tsx",
+     "line": 1377
+    },
+    {
+     "file": "src/pages/admin/CompanyDetailPage.tsx",
+     "line": 1491
+    },
+    {
+     "file": "src/pages/admin/CompanyDetailPage.tsx",
+     "line": 2060
+    },
+    {
+     "file": "src/pages/admin/CompanyDetailPage.tsx",
+     "line": 2104
+    },
+    {
+     "file": "src/pages/admin/CompanyDetailPage.tsx",
+     "line": 2151
+    },
+    {
+     "file": "src/pages/admin/CompanyDetailPage.tsx",
+     "line": 2160
+    },
+    {
+     "file": "src/pages/admin/CompanyDetailPage.tsx",
+     "line": 2171
+    },
+    {
+     "file": "src/pages/admin/CompanyDetailPage.tsx",
+     "line": 2181
+    }
+   ],
+   "fragments": [
+    {
+     "oldClass": "w-full px-3 py-2 bg-transparent border border-border-strong rounded-control text-dense placeholder:text-fg/50 focus:outline-none focus:border-border-strong focus:ring-2 focus:ring-accent-ring transition-all duration-0 disabled:opacity-100 disabled:cursor-default",
+     "newClass": "w-full px-3 py-2 bg-transparent border border-border-strong rounded-control text-dense placeholder:text-fg/50 focus:border-border-strong transition-all duration-0 disabled:opacity-100 disabled:cursor-default",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(209, 99, 16) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 370,
+       "height": 36.84375,
+       "padding": "8px 12px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 370,
+       "height": 36.84375,
+       "padding": "8px 12px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     }
+    },
+    {
+     "oldClass": "w-14 px-2 py-1 bg-transparent border border-border-strong rounded-chip text-caption text-center placeholder:text-fg/50 focus:outline-none focus:border-border-strong focus:ring-1 focus:ring-accent-ring transition-all duration-0 disabled:opacity-100 disabled:cursor-default",
+     "newClass": "w-14 px-2 py-1 bg-transparent border border-border-strong rounded-chip text-caption text-center placeholder:text-fg/50 focus:border-border-strong transition-all duration-0 disabled:opacity-100 disabled:cursor-default",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(209, 99, 16) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 56,
+       "height": 26.1875,
+       "padding": "4px 8px",
+       "fontSize": "12px",
+       "lineHeight": "16.2px",
+       "borderWidth": "1px",
+       "borderRadius": "4px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 56,
+       "height": 26.1875,
+       "padding": "4px 8px",
+       "fontSize": "12px",
+       "lineHeight": "16.2px",
+       "borderWidth": "1px",
+       "borderRadius": "4px"
+      }
+     }
+    },
+    {
+     "oldClass": "inline-flex justify-normal gap-1.5 rounded-full border py-2 font-sans font-medium transition-all hover:bg-surface-raised focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-ring sm:py-1 ",
+     "newClass": "inline-flex justify-normal gap-1.5 rounded-full border py-2 font-sans font-medium transition-all hover:bg-surface-raised sm:py-1 ",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(209, 99, 16) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 78.796875,
+       "height": 34,
+       "padding": "4px 0px",
+       "fontSize": "16px",
+       "lineHeight": "24px",
+       "borderWidth": "1px",
+       "borderRadius": "3.35544e+07px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 78.796875,
+       "height": 34,
+       "padding": "4px 0px",
+       "fontSize": "16px",
+       "lineHeight": "24px",
+       "borderWidth": "1px",
+       "borderRadius": "3.35544e+07px"
+      }
+     }
+    },
+    {
+     "oldClass": "w-24 px-3 py-2 bg-transparent border border-border-strong rounded-control text-dense placeholder:text-fg/50 focus:outline-none focus:border-border-strong focus:ring-2 focus:ring-accent-ring transition-all duration-0 disabled:opacity-100 disabled:cursor-default",
+     "newClass": "w-24 px-3 py-2 bg-transparent border border-border-strong rounded-control text-dense placeholder:text-fg/50 focus:border-border-strong transition-all duration-0 disabled:opacity-100 disabled:cursor-default",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(209, 99, 16) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 96,
+       "height": 36.84375,
+       "padding": "8px 12px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 96,
+       "height": 36.84375,
+       "padding": "8px 12px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     }
+    },
+    {
+     "oldClass": "flex-1 min-w-0 px-3 py-2 bg-transparent border border-border-strong rounded-control text-dense font-mono placeholder:text-fg/50 focus:outline-none focus:border-border-strong focus:ring-2 focus:ring-accent-ring transition-all duration-0 disabled:opacity-100 disabled:cursor-default",
+     "newClass": "flex-1 min-w-0 px-3 py-2 bg-transparent border border-border-strong rounded-control text-dense font-mono placeholder:text-fg/50 focus:border-border-strong transition-all duration-0 disabled:opacity-100 disabled:cursor-default",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(209, 99, 16) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 370,
+       "height": 36.84375,
+       "padding": "8px 12px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 370,
+       "height": 36.84375,
+       "padding": "8px 12px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     }
+    },
+    {
+     "oldClass": "w-full px-3 py-2 bg-transparent border border-border-strong rounded-control text-dense font-mono placeholder:text-fg/50 focus:outline-none focus:border-border-strong focus:ring-2 focus:ring-accent-ring transition-all duration-0 disabled:opacity-100 disabled:cursor-default",
+     "newClass": "w-full px-3 py-2 bg-transparent border border-border-strong rounded-control text-dense font-mono placeholder:text-fg/50 focus:border-border-strong transition-all duration-0 disabled:opacity-100 disabled:cursor-default",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(209, 99, 16) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 370,
+       "height": 36.84375,
+       "padding": "8px 12px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 370,
+       "height": 36.84375,
+       "padding": "8px 12px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     }
+    },
+    {
+     "oldClass": "mt-2 inline-flex gap-1 min-w-0 rounded-chip p-0 text-dense font-medium text-accent-strong hover:!bg-transparent hover:text-accent-fg focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-ring",
+     "newClass": "mt-2 inline-flex gap-1 min-w-0 rounded-chip p-0 text-dense font-medium text-accent-strong hover:!bg-transparent hover:text-accent-fg ",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(143, 66, 7) none 3px",
+       "outlineColor": "rgb(143, 66, 7)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(209, 99, 16) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 62.40625,
+       "height": 18.84375,
+       "padding": "0px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "0px",
+       "borderRadius": "4px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(143, 66, 7) none 3px",
+       "outlineColor": "rgb(143, 66, 7)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 62.40625,
+       "height": 18.84375,
+       "padding": "0px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "0px",
+       "borderRadius": "4px"
+      }
+     }
+    },
+    {
+     "oldClass": "min-w-0 px-4 py-2 bg-accent-solid text-on-dark rounded-control text-dense font-semibold hover:bg-accent-strong transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-ring",
+     "newClass": "min-w-0 px-4 py-2 bg-accent-solid text-on-dark rounded-control text-dense font-semibold hover:bg-accent-strong transition-colors ",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(255, 255, 255) none 3px",
+       "outlineColor": "rgb(255, 255, 255)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(209, 99, 16) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 95.46875,
+       "height": 34.84375,
+       "padding": "8px 16px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "0px",
+       "borderRadius": "10px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(255, 255, 255) none 3px",
+       "outlineColor": "rgb(255, 255, 255)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 95.46875,
+       "height": 34.84375,
+       "padding": "8px 16px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "0px",
+       "borderRadius": "10px"
+      }
+     }
+    },
+    {
+     "oldClass": "min-w-0 px-4 py-2 border border-border text-fg-muted rounded-control text-dense font-medium hover:!bg-surface-canvas transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-ring",
+     "newClass": "min-w-0 px-4 py-2 border border-border text-fg-muted rounded-control text-dense font-medium hover:!bg-surface-canvas transition-colors ",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(87, 83, 78) none 3px",
+       "outlineColor": "rgb(87, 83, 78)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(209, 99, 16) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 96.40625,
+       "height": 36.84375,
+       "padding": "8px 16px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(87, 83, 78) none 3px",
+       "outlineColor": "rgb(87, 83, 78)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 96.40625,
+       "height": 36.84375,
+       "padding": "8px 16px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     }
+    },
+    {
+     "oldClass": "w-16 text-center px-2 py-1.5 bg-transparent text-dense font-semibold border border-border rounded-control placeholder:text-fg/50 focus:outline-none focus:border-border focus:ring-2 focus:ring-accent-ring transition-all duration-0 disabled:opacity-100 disabled:cursor-default",
+     "newClass": "w-16 text-center px-2 py-1.5 bg-transparent text-dense font-semibold border border-border rounded-control placeholder:text-fg/50 focus:border-border transition-all duration-0 disabled:opacity-100 disabled:cursor-default",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(209, 99, 16) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 64,
+       "height": 32.84375,
+       "padding": "6px 8px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 64,
+       "height": 32.84375,
+       "padding": "6px 8px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     }
+    },
+    {
+     "oldClass": "w-full min-h-0 px-3 py-2 bg-transparent border border-border-strong rounded-control text-dense placeholder:text-fg/50 focus:outline-none focus:border-border-strong focus:ring-2 focus:ring-accent-ring resize-none transition-all duration-0 disabled:opacity-100 disabled:cursor-default",
+     "newClass": "w-full min-h-0 px-3 py-2 bg-transparent border border-border-strong rounded-control text-dense placeholder:text-fg/50 focus:border-border-strong resize-none transition-all duration-0 disabled:opacity-100 disabled:cursor-default",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(209, 99, 16) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 370,
+       "height": 36.84375,
+       "padding": "8px 12px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 370,
+       "height": 36.84375,
+       "padding": "8px 12px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     }
+    },
+    {
+     "oldClass": "relative block p-0 w-11 h-6 rounded-full cursor-default transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2",
+     "newClass": "relative block p-0 w-11 h-6 rounded-full cursor-default transition-colors duration-200 ",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(255, 255, 255) 0px 0px 0px 2px, rgb(180, 83, 9) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#B45309"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 44,
+       "height": 24,
+       "padding": "0px",
+       "fontSize": "16px",
+       "lineHeight": "24px",
+       "borderWidth": "0px",
+       "borderRadius": "3.35544e+07px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 44,
+       "height": 24,
+       "padding": "0px",
+       "fontSize": "16px",
+       "lineHeight": "24px",
+       "borderWidth": "0px",
+       "borderRadius": "3.35544e+07px"
+      }
+     }
+    },
+    {
+     "oldClass": "w-32 px-2 py-1.5 bg-transparent border border-border-strong rounded-control text-dense text-inherit text-center placeholder:text-current/50 focus:outline-none focus:border-border-strong focus:ring-2 focus:ring-accent-ring transition-all duration-0 disabled:opacity-100 disabled:cursor-default",
+     "newClass": "w-32 px-2 py-1.5 bg-transparent border border-border-strong rounded-control text-dense text-inherit text-center placeholder:text-current/50 focus:border-border-strong transition-all duration-0 disabled:opacity-100 disabled:cursor-default",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(209, 99, 16) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 128,
+       "height": 32.84375,
+       "padding": "6px 8px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 128,
+       "height": 32.84375,
+       "padding": "6px 8px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     }
+    },
+    {
+     "oldClass": "w-24 px-2 py-1.5 bg-transparent border border-border-strong rounded-control text-dense text-inherit text-center placeholder:text-current/50 focus:outline-none focus:border-border-strong focus:ring-2 focus:ring-accent-ring transition-all duration-0 disabled:opacity-100 disabled:cursor-default",
+     "newClass": "w-24 px-2 py-1.5 bg-transparent border border-border-strong rounded-control text-dense text-inherit text-center placeholder:text-current/50 focus:border-border-strong transition-all duration-0 disabled:opacity-100 disabled:cursor-default",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(209, 99, 16) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 96,
+       "height": 32.84375,
+       "padding": "6px 8px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 96,
+       "height": 32.84375,
+       "padding": "6px 8px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     }
+    },
+    {
+     "oldClass": "border-danger ring-1 ring-danger-muted focus:border-danger focus:ring-danger",
+     "newClass": "border-danger ring-1 ring-danger-muted focus:border-danger ",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(254, 202, 202) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": "#FECACA"
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(239, 68, 68) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#EF4444"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 75.5,
+       "height": 24,
+       "padding": "0px",
+       "fontSize": "16px",
+       "lineHeight": "24px",
+       "borderWidth": "0px",
+       "borderRadius": "0px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(254, 202, 202) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": "#FECACA"
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(254, 202, 202) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#FECACA"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 75.5,
+       "height": 24,
+       "padding": "0px",
+       "fontSize": "16px",
+       "lineHeight": "24px",
+       "borderWidth": "0px",
+       "borderRadius": "0px"
+      }
+     }
+    },
+    {
+     "oldClass": "border-border-strong focus:border-border-strong focus:ring-accent-ring",
+     "newClass": "border-border-strong focus:border-border-strong ",
+     "colorOnlyBranch": true,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 75.5,
+       "height": 24,
+       "padding": "0px",
+       "fontSize": "16px",
+       "lineHeight": "24px",
+       "borderWidth": "0px",
+       "borderRadius": "0px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 75.5,
+       "height": 24,
+       "padding": "0px",
+       "fontSize": "16px",
+       "lineHeight": "24px",
+       "borderWidth": "0px",
+       "borderRadius": "0px"
+      }
+     }
+    },
+    {
+     "oldClass": "w-20 px-2 py-1 bg-transparent border border-border-strong rounded-control text-dense text-inherit text-center placeholder:text-current/50 focus:outline-none focus:border-border-strong focus:ring-2 focus:ring-accent-ring transition-all duration-0 disabled:opacity-100 disabled:cursor-default",
+     "newClass": "w-20 px-2 py-1 bg-transparent border border-border-strong rounded-control text-dense text-inherit text-center placeholder:text-current/50 focus:border-border-strong transition-all duration-0 disabled:opacity-100 disabled:cursor-default",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(209, 99, 16) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 80,
+       "height": 28.84375,
+       "padding": "4px 8px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 80,
+       "height": 28.84375,
+       "padding": "4px 8px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     }
+    },
+    {
+     "oldClass": "relative block p-0 w-11 h-6 rounded-full cursor-default transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 flex-shrink-0",
+     "newClass": "relative block p-0 w-11 h-6 rounded-full cursor-default transition-colors duration-200 flex-shrink-0",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(255, 255, 255) 0px 0px 0px 2px, rgb(180, 83, 9) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#B45309"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 44,
+       "height": 24,
+       "padding": "0px",
+       "fontSize": "16px",
+       "lineHeight": "24px",
+       "borderWidth": "0px",
+       "borderRadius": "3.35544e+07px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 44,
+       "height": 24,
+       "padding": "0px",
+       "fontSize": "16px",
+       "lineHeight": "24px",
+       "borderWidth": "0px",
+       "borderRadius": "3.35544e+07px"
+      }
+     }
+    },
+    {
+     "oldClass": "w-24 px-3 py-1.5 bg-transparent border border-border-strong rounded-control text-dense placeholder:text-fg/50 focus:outline-none focus:border-border-strong focus:ring-2 focus:ring-accent-ring transition-all duration-0 disabled:opacity-100 disabled:cursor-default",
+     "newClass": "w-24 px-3 py-1.5 bg-transparent border border-border-strong rounded-control text-dense placeholder:text-fg/50 focus:border-border-strong transition-all duration-0 disabled:opacity-100 disabled:cursor-default",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(209, 99, 16) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 96,
+       "height": 32.84375,
+       "padding": "6px 12px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 96,
+       "height": 32.84375,
+       "padding": "6px 12px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     }
+    },
+    {
+     "oldClass": "w-8 h-8 flex items-center justify-center gap-[normal] font-body font-normal text-fg-subtle hover:text-fg-muted text-h3 transition-colors cursor-default focus:outline-none focus-visible:ring-2 focus-visible:ring-fg-faint rounded-chip",
+     "newClass": "w-8 h-8 flex items-center justify-center gap-[normal] font-body font-normal text-fg-subtle hover:text-fg-muted text-h3 transition-colors cursor-default rounded-chip",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(120, 113, 108) none 3px",
+       "outlineColor": "rgb(120, 113, 108)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(166, 160, 155) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#A6A09B"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 32,
+       "height": 32,
+       "padding": "0px",
+       "fontSize": "18px",
+       "lineHeight": "25.2px",
+       "borderWidth": "0px",
+       "borderRadius": "4px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(120, 113, 108) none 3px",
+       "outlineColor": "rgb(120, 113, 108)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 32,
+       "height": 32,
+       "padding": "0px",
+       "fontSize": "18px",
+       "lineHeight": "25.2px",
+       "borderWidth": "0px",
+       "borderRadius": "4px"
+      }
+     }
+    },
+    {
+     "oldClass": "inline-block [align-items:normal]! justify-normal gap-[normal] px-4 py-1.5 rounded-control font-body text-dense font-medium transition-all cursor-default focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-ring",
+     "newClass": "inline-block [align-items:normal]! justify-normal gap-[normal] px-4 py-1.5 rounded-control font-body text-dense font-medium transition-all cursor-default ",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(209, 99, 16) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 94.40625,
+       "height": 30.84375,
+       "padding": "6px 16px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "0px",
+       "borderRadius": "10px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 94.40625,
+       "height": 30.84375,
+       "padding": "6px 16px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "0px",
+       "borderRadius": "10px"
+      }
+     }
+    },
+    {
+     "oldClass": "mt-2 w-full px-3 py-2 bg-transparent border border-border-strong rounded-control text-dense text-inherit placeholder:text-current/50 focus:outline-none focus:border-border-strong focus:ring-2 focus:ring-accent-ring transition-all duration-0 disabled:opacity-100 disabled:cursor-default",
+     "newClass": "mt-2 w-full px-3 py-2 bg-transparent border border-border-strong rounded-control text-dense text-inherit placeholder:text-current/50 focus:border-border-strong transition-all duration-0 disabled:opacity-100 disabled:cursor-default",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(209, 99, 16) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 370,
+       "height": 36.84375,
+       "padding": "8px 12px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 370,
+       "height": 36.84375,
+       "padding": "8px 12px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     }
+    },
+    {
+     "oldClass": "w-full px-3 py-2 bg-transparent border border-border-strong rounded-control text-dense text-inherit placeholder:text-current/50 focus:outline-none focus:border-border-strong focus:ring-2 focus:ring-accent-ring transition-all duration-0 disabled:opacity-100 disabled:cursor-default",
+     "newClass": "w-full px-3 py-2 bg-transparent border border-border-strong rounded-control text-dense text-inherit placeholder:text-current/50 focus:border-border-strong transition-all duration-0 disabled:opacity-100 disabled:cursor-default",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(209, 99, 16) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 370,
+       "height": 36.84375,
+       "padding": "8px 12px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 370,
+       "height": 36.84375,
+       "padding": "8px 12px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     }
+    },
+    {
+     "oldClass": "inline-block [align-items:normal]! justify-normal gap-[normal] px-4 py-1.5 rounded-control font-body text-dense font-medium transition-all cursor-default disabled:opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-ring",
+     "newClass": "inline-block [align-items:normal]! justify-normal gap-[normal] px-4 py-1.5 rounded-control font-body text-dense font-medium transition-all cursor-default disabled:opacity-100 ",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(209, 99, 16) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 94.40625,
+       "height": 30.84375,
+       "padding": "6px 16px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "0px",
+       "borderRadius": "10px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 94.40625,
+       "height": 30.84375,
+       "padding": "6px 16px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "0px",
+       "borderRadius": "10px"
+      }
+     }
+    },
+    {
+     "oldClass": "w-full min-h-0 px-3 py-2 bg-transparent border border-border-strong rounded-control text-dense text-inherit font-mono placeholder:text-current/50 focus:outline-none focus:border-border-strong focus:ring-2 focus:ring-accent-ring resize-none transition-all duration-0 disabled:opacity-100 disabled:cursor-default",
+     "newClass": "w-full min-h-0 px-3 py-2 bg-transparent border border-border-strong rounded-control text-dense text-inherit font-mono placeholder:text-current/50 focus:border-border-strong resize-none transition-all duration-0 disabled:opacity-100 disabled:cursor-default",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(209, 99, 16) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 370,
+       "height": 36.84375,
+       "padding": "8px 12px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 370,
+       "height": 36.84375,
+       "padding": "8px 12px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     }
+    },
+    {
+     "oldClass": "w-full flex items-center justify-between px-4 py-3 hover:bg-surface-canvas transition-colors text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-ring focus-visible:ring-inset gap-[normal] font-body font-normal cursor-default disabled:opacity-100 disabled:cursor-default",
+     "newClass": "w-full flex items-center justify-between px-4 py-3 hover:bg-surface-canvas transition-colors text-left gap-[normal] font-body font-normal cursor-default disabled:opacity-100 disabled:cursor-default",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(209, 99, 16) 0px 0px 0px 2px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 370,
+       "height": 48,
+       "padding": "12px 16px",
+       "fontSize": "16px",
+       "lineHeight": "24px",
+       "borderWidth": "0px",
+       "borderRadius": "0px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 370,
+       "height": 48,
+       "padding": "12px 16px",
+       "fontSize": "16px",
+       "lineHeight": "24px",
+       "borderWidth": "0px",
+       "borderRadius": "0px"
+      }
+     }
+    },
+    {
+     "oldClass": "block [align-items:normal]! justify-normal gap-[normal] px-3 py-1.5 rounded-control font-body font-medium text-accent-strong border border-accent-muted hover:bg-accent-subtle transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-ring cursor-default",
+     "newClass": "block [align-items:normal]! justify-normal gap-[normal] px-3 py-1.5 rounded-control font-body font-medium text-accent-strong border border-accent-muted hover:bg-accent-subtle transition-colors cursor-default",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(143, 66, 7) none 3px",
+       "outlineColor": "rgb(143, 66, 7)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(209, 99, 16) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 102.796875,
+       "height": 38,
+       "padding": "6px 12px",
+       "fontSize": "16px",
+       "lineHeight": "24px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(143, 66, 7) none 3px",
+       "outlineColor": "rgb(143, 66, 7)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 102.796875,
+       "height": 38,
+       "padding": "6px 12px",
+       "fontSize": "16px",
+       "lineHeight": "24px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     }
+    },
+    {
+     "oldClass": "flex items-center justify-normal gap-1.5 px-3 py-1.5 rounded-control font-body text-caption font-medium text-accent-strong border border-accent-muted hover:bg-accent-subtle transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-ring cursor-default",
+     "newClass": "flex items-center justify-normal gap-1.5 px-3 py-1.5 rounded-control font-body text-caption font-medium text-accent-strong border border-accent-muted hover:bg-accent-subtle transition-colors cursor-default",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(143, 66, 7) none 3px",
+       "outlineColor": "rgb(143, 66, 7)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(209, 99, 16) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 83.59375,
+       "height": 30.1875,
+       "padding": "6px 12px",
+       "fontSize": "12px",
+       "lineHeight": "16.2px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(143, 66, 7) none 3px",
+       "outlineColor": "rgb(143, 66, 7)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 83.59375,
+       "height": 30.1875,
+       "padding": "6px 12px",
+       "fontSize": "12px",
+       "lineHeight": "16.2px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     }
+    },
+    {
+     "oldClass": "flex items-center justify-normal gap-1 p-0 font-body font-normal text-caption text-fg-subtle hover:text-accent-strong transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-ring rounded-chip min-h-[44px] sm:min-h-0 cursor-default",
+     "newClass": "flex items-center justify-normal gap-1 p-0 font-body font-normal text-caption text-fg-subtle hover:text-accent-strong transition-colors rounded-chip min-h-[44px] sm:min-h-0 cursor-default",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(120, 113, 108) none 3px",
+       "outlineColor": "rgb(120, 113, 108)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(209, 99, 16) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 56.625,
+       "height": 16.1875,
+       "padding": "0px",
+       "fontSize": "12px",
+       "lineHeight": "16.2px",
+       "borderWidth": "0px",
+       "borderRadius": "4px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(120, 113, 108) none 3px",
+       "outlineColor": "rgb(120, 113, 108)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 56.625,
+       "height": 16.1875,
+       "padding": "0px",
+       "fontSize": "12px",
+       "lineHeight": "16.2px",
+       "borderWidth": "0px",
+       "borderRadius": "4px"
+      }
+     }
+    },
+    {
+     "oldClass": "w-full min-h-0 px-3 py-2 bg-transparent border border-border-strong rounded-control text-dense text-inherit resize-none placeholder:text-current/50 focus:outline-none focus:border-border-strong focus:ring-2 focus:ring-accent-ring transition-all duration-0 disabled:opacity-100 disabled:cursor-default",
+     "newClass": "w-full min-h-0 px-3 py-2 bg-transparent border border-border-strong rounded-control text-dense text-inherit resize-none placeholder:text-current/50 focus:border-border-strong transition-all duration-0 disabled:opacity-100 disabled:cursor-default",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(209, 99, 16) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 370,
+       "height": 36.84375,
+       "padding": "8px 12px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 370,
+       "height": 36.84375,
+       "padding": "8px 12px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     }
+    },
+    {
+     "oldClass": "block [align-items:normal]! justify-normal gap-[normal] px-3 py-2 sm:px-2.5 sm:py-1 rounded-full font-body text-caption font-medium border transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-ring cursor-default",
+     "newClass": "block [align-items:normal]! justify-normal gap-[normal] px-3 py-2 sm:px-2.5 sm:py-1 rounded-full font-body text-caption font-medium border transition-all cursor-default",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(209, 99, 16) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 79.59375,
+       "height": 26.1875,
+       "padding": "4px 10px",
+       "fontSize": "12px",
+       "lineHeight": "16.2px",
+       "borderWidth": "1px",
+       "borderRadius": "3.35544e+07px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 79.59375,
+       "height": 26.1875,
+       "padding": "4px 10px",
+       "fontSize": "12px",
+       "lineHeight": "16.2px",
+       "borderWidth": "1px",
+       "borderRadius": "3.35544e+07px"
+      }
+     }
+    },
+    {
+     "oldClass": "flex-1 w-auto px-2 py-1 bg-transparent text-caption text-inherit border border-border-strong rounded-control placeholder:text-current/50 focus:outline-none focus:border-border-strong focus:ring-2 focus:ring-accent-ring transition-all duration-0 disabled:opacity-100 disabled:cursor-default",
+     "newClass": "flex-1 w-auto px-2 py-1 bg-transparent text-caption text-inherit border border-border-strong rounded-control placeholder:text-current/50 focus:border-border-strong transition-all duration-0 disabled:opacity-100 disabled:cursor-default",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(209, 99, 16) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 370,
+       "height": 26.1875,
+       "padding": "4px 8px",
+       "fontSize": "12px",
+       "lineHeight": "16.2px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 370,
+       "height": 26.1875,
+       "padding": "4px 8px",
+       "fontSize": "12px",
+       "lineHeight": "16.2px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     }
+    },
+    {
+     "oldClass": "w-full min-h-0 px-3 py-2 bg-transparent border border-border-strong rounded-control text-dense text-inherit resize-none placeholder:text-current/50 focus:outline-none focus:border-border-strong focus:ring-2 focus:ring-accent-ring transition-all duration-0 disabled:bg-surface-raised disabled:text-fg-muted disabled:border-border-subtle disabled:opacity-100 disabled:cursor-default",
+     "newClass": "w-full min-h-0 px-3 py-2 bg-transparent border border-border-strong rounded-control text-dense text-inherit resize-none placeholder:text-current/50 focus:border-border-strong transition-all duration-0 disabled:bg-surface-raised disabled:text-fg-muted disabled:border-border-subtle disabled:opacity-100 disabled:cursor-default",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(209, 99, 16) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 370,
+       "height": 36.84375,
+       "padding": "8px 12px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 370,
+       "height": 36.84375,
+       "padding": "8px 12px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     }
+    },
+    {
+     "oldClass": "flex items-center justify-center gap-1.5 px-3 py-1.5 touch:min-h-11 touch:px-4 rounded-control font-body text-dense font-medium text-fg-subtle border border-border hover:text-fg hover:bg-surface-canvas hover:border-border-strong disabled:opacity-30 disabled:cursor-not-allowed transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-ring cursor-default",
+     "newClass": "flex items-center justify-center gap-1.5 px-3 py-1.5 touch:min-h-11 touch:px-4 rounded-control font-body text-dense font-medium text-fg-subtle border border-border hover:text-fg hover:bg-surface-canvas hover:border-border-strong disabled:opacity-30 disabled:cursor-not-allowed transition-all cursor-default",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(120, 113, 108) none 3px",
+       "outlineColor": "rgb(120, 113, 108)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(209, 99, 16) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 88.40625,
+       "height": 32.84375,
+       "padding": "6px 12px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(120, 113, 108) none 3px",
+       "outlineColor": "rgb(120, 113, 108)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 88.40625,
+       "height": 32.84375,
+       "padding": "6px 12px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     }
+    },
+    {
+     "oldClass": "inline-flex items-center justify-normal gap-[normal] font-body text-dense font-medium text-accent-strong hover:text-accent-fg underline underline-offset-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-ring rounded-chip touch:min-h-11 touch:px-2 cursor-default",
+     "newClass": "inline-flex items-center justify-normal gap-[normal] font-body text-dense font-medium text-accent-strong hover:text-accent-fg underline underline-offset-2 rounded-chip touch:min-h-11 touch:px-2 cursor-default",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(143, 66, 7) none 3px",
+       "outlineColor": "rgb(143, 66, 7)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(209, 99, 16) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 62.40625,
+       "height": 18.84375,
+       "padding": "0px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "0px",
+       "borderRadius": "4px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(143, 66, 7) none 3px",
+       "outlineColor": "rgb(143, 66, 7)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 62.40625,
+       "height": 18.84375,
+       "padding": "0px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "0px",
+       "borderRadius": "4px"
+      }
+     }
+    },
+    {
+     "oldClass": "block h-3.5 w-3.5 rounded-chip bg-transparent p-0 font-sans text-body font-normal text-fg-subtle hover:bg-transparent hover:text-fg-muted focus:bg-transparent focus:text-fg-muted focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2",
+     "newClass": "block h-3.5 w-3.5 rounded-chip bg-transparent p-0 font-sans text-body font-normal text-fg-subtle hover:bg-transparent hover:text-fg-muted focus:bg-transparent focus:text-fg-muted ",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(120, 113, 108) none 3px",
+       "outlineColor": "rgb(120, 113, 108)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(255, 255, 255) 0px 0px 0px 2px, rgb(180, 83, 9) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#B45309"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 14,
+       "height": 14,
+       "padding": "0px",
+       "fontSize": "15px",
+       "lineHeight": "22.5px",
+       "borderWidth": "0px",
+       "borderRadius": "4px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(120, 113, 108) none 3px",
+       "outlineColor": "rgb(120, 113, 108)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 14,
+       "height": 14,
+       "padding": "0px",
+       "fontSize": "15px",
+       "lineHeight": "22.5px",
+       "borderWidth": "0px",
+       "borderRadius": "4px"
+      }
+     }
+    },
+    {
+     "oldClass": "focus:outline-none focus:border-accent-ring focus:ring-2 focus:ring-accent-subtle-alt",
+     "newClass": " focus:border-accent-ring ",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(249, 228, 212) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#F9E4D4"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 75.5,
+       "height": 24,
+       "padding": "0px",
+       "fontSize": "16px",
+       "lineHeight": "24px",
+       "borderWidth": "0px",
+       "borderRadius": "0px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 75.5,
+       "height": 24,
+       "padding": "0px",
+       "fontSize": "16px",
+       "lineHeight": "24px",
+       "borderWidth": "0px",
+       "borderRadius": "0px"
+      }
+     }
+    },
+    {
+     "oldClass": "border-danger focus:border-danger focus:ring-danger-subtle",
+     "newClass": "border-danger focus:border-danger ",
+     "colorOnlyBranch": true,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#FEF2F2"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 75.5,
+       "height": 24,
+       "padding": "0px",
+       "fontSize": "16px",
+       "lineHeight": "24px",
+       "borderWidth": "0px",
+       "borderRadius": "0px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 75.5,
+       "height": 24,
+       "padding": "0px",
+       "fontSize": "16px",
+       "lineHeight": "24px",
+       "borderWidth": "0px",
+       "borderRadius": "0px"
+      }
+     }
+    },
+    {
+     "oldClass": "w-full px-3 py-2 border border-border-strong rounded-control text-dense focus:outline-none focus:ring-2 focus:ring-accent-ring resize-none",
+     "newClass": "w-full px-3 py-2 border border-border-strong rounded-control text-dense resize-none",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(209, 99, 16) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 370,
+       "height": 36.84375,
+       "padding": "8px 12px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 370,
+       "height": 36.84375,
+       "padding": "8px 12px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     }
+    },
+    {
+     "oldClass": "w-4 h-4 rounded-chip border-border-strong text-accent focus:ring-accent accent-accent-solid",
+     "newClass": "w-4 h-4 rounded-chip border-border-strong text-accent accent-accent-solid",
+     "colorOnlyBranch": true,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(180, 83, 9) none 3px",
+       "outlineColor": "rgb(180, 83, 9)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#B45309"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 16,
+       "height": 16,
+       "padding": "0px",
+       "fontSize": "16px",
+       "lineHeight": "24px",
+       "borderWidth": "0px",
+       "borderRadius": "4px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(180, 83, 9) none 3px",
+       "outlineColor": "rgb(180, 83, 9)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 16,
+       "height": 16,
+       "padding": "0px",
+       "fontSize": "16px",
+       "lineHeight": "24px",
+       "borderWidth": "0px",
+       "borderRadius": "4px"
+      }
+     }
+    },
+    {
+     "oldClass": "w-20 px-2 py-1 border border-border-strong rounded-control text-dense text-center focus:outline-none focus:ring-2 focus:ring-accent-ring",
+     "newClass": "w-20 px-2 py-1 border border-border-strong rounded-control text-dense text-center ",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(209, 99, 16) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 80,
+       "height": 28.84375,
+       "padding": "4px 8px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 80,
+       "height": 28.84375,
+       "padding": "4px 8px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     }
+    },
+    {
+     "oldClass": "w-full px-3 py-2 text-dense border border-border-strong rounded-control focus:outline-none focus:ring-2 focus:ring-accent-ring",
+     "newClass": "w-full px-3 py-2 text-dense border border-border-strong rounded-control ",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(209, 99, 16) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 370,
+       "height": 36.84375,
+       "padding": "8px 12px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 370,
+       "height": 36.84375,
+       "padding": "8px 12px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     }
+    },
+    {
+     "oldClass": "w-full px-3 py-2 text-dense border border-border-strong rounded-control resize-none focus:outline-none focus:ring-2 focus:ring-accent-ring",
+     "newClass": "w-full px-3 py-2 text-dense border border-border-strong rounded-control resize-none ",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(209, 99, 16) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 370,
+       "height": 36.84375,
+       "padding": "8px 12px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 370,
+       "height": 36.84375,
+       "padding": "8px 12px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     }
+    },
+    {
+     "oldClass": "w-full px-3 py-2 border border-border-strong rounded-control text-dense focus:outline-none focus:ring-2 focus:ring-accent-ring",
+     "newClass": "w-full px-3 py-2 border border-border-strong rounded-control text-dense ",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(209, 99, 16) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 370,
+       "height": 36.84375,
+       "padding": "8px 12px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 370,
+       "height": 36.84375,
+       "padding": "8px 12px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     }
+    },
+    {
+     "oldClass": "w-full px-2 py-1.5 border border-border-strong rounded-control text-dense focus:outline-none focus:ring-2 focus:ring-accent-ring",
+     "newClass": "w-full px-2 py-1.5 border border-border-strong rounded-control text-dense ",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(209, 99, 16) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 370,
+       "height": 32.84375,
+       "padding": "6px 8px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 370,
+       "height": 32.84375,
+       "padding": "6px 8px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     }
+    },
+    {
+     "oldClass": "w-full px-3 py-2 border border-border-strong rounded-control text-caption text-fg-muted bg-surface-raised focus:outline-none focus:ring-2 focus:ring-accent-ring",
+     "newClass": "w-full px-3 py-2 border border-border-strong rounded-control text-caption text-fg-muted bg-surface-raised ",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(87, 83, 78) none 3px",
+       "outlineColor": "rgb(87, 83, 78)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(209, 99, 16) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 370,
+       "height": 34.1875,
+       "padding": "8px 12px",
+       "fontSize": "12px",
+       "lineHeight": "16.2px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(87, 83, 78) none 3px",
+       "outlineColor": "rgb(87, 83, 78)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 370,
+       "height": 34.1875,
+       "padding": "8px 12px",
+       "fontSize": "12px",
+       "lineHeight": "16.2px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     }
+    },
+    {
+     "oldClass": "px-3 py-2 border border-border-strong rounded-control text-dense text-fg-muted focus:outline-none focus:ring-2 focus:ring-accent-ring",
+     "newClass": "px-3 py-2 border border-border-strong rounded-control text-dense text-fg-muted ",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(87, 83, 78) none 3px",
+       "outlineColor": "rgb(87, 83, 78)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(209, 99, 16) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 87.34375,
+       "height": 36.84375,
+       "padding": "8px 12px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(87, 83, 78) none 3px",
+       "outlineColor": "rgb(87, 83, 78)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 87.34375,
+       "height": 36.84375,
+       "padding": "8px 12px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     }
+    },
+    {
+     "oldClass": "w-full px-3 py-2 border border-border-strong rounded-control text-dense focus:outline-none focus:ring-2 focus:ring-danger",
+     "newClass": "w-full px-3 py-2 border border-border-strong rounded-control text-dense ",
+     "colorOnlyBranch": false,
+     "before": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(239, 68, 68) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#EF4444"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 370,
+       "height": 36.84375,
+       "padding": "8px 12px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "none",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": null
+      },
+      "focused": {
+       "boxShadow": "none",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": null
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 370,
+       "height": 36.84375,
+       "padding": "8px 12px",
+       "fontSize": "13px",
+       "lineHeight": "18.85px",
+       "borderWidth": "1px",
+       "borderRadius": "10px"
+      }
+     }
+    }
+   ]
+  },
+  "permanentRings": {
+   "описание": "все 8 сохранённых постоянных колец (не фокус), каждое своей строкой: computed boxShadow idle-состояния (без фокуса) до и после должен совпадать",
+   "fragments": [
+    {
+     "file": "src/components/admin/NormPresetPicker.tsx",
+     "line": 84,
+     "className": "bg-accent-subtle border-accent ring-1 ring-accent",
+     "before": {
+      "idle": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(180, 83, 9) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": "#B45309"
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(180, 83, 9) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#B45309"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 75.5,
+       "height": 24,
+       "padding": "0px",
+       "fontSize": "16px",
+       "lineHeight": "24px",
+       "borderWidth": "0px",
+       "borderRadius": "0px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(180, 83, 9) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": "#B45309"
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(180, 83, 9) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#B45309"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 75.5,
+       "height": 24,
+       "padding": "0px",
+       "fontSize": "16px",
+       "lineHeight": "24px",
+       "borderWidth": "0px",
+       "borderRadius": "0px"
+      }
+     }
+    },
+    {
+     "file": "src/components/crm/CrmConnectWizard.tsx",
+     "line": 98,
+     "className": "border-accent ring-1 ring-accent bg-accent-subtle text-fg",
+     "before": {
+      "idle": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(180, 83, 9) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": "#B45309"
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(180, 83, 9) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#B45309"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 75.5,
+       "height": 24,
+       "padding": "0px",
+       "fontSize": "16px",
+       "lineHeight": "24px",
+       "borderWidth": "0px",
+       "borderRadius": "0px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(180, 83, 9) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": "#B45309"
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(180, 83, 9) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#B45309"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 75.5,
+       "height": 24,
+       "padding": "0px",
+       "fontSize": "16px",
+       "lineHeight": "24px",
+       "borderWidth": "0px",
+       "borderRadius": "0px"
+      }
+     }
+    },
+    {
+     "file": "src/components/settings/RopBonusSettings.tsx",
+     "line": 158,
+     "className": "border-danger ring-1 ring-danger-muted focus:border-danger focus:ring-danger",
+     "before": {
+      "idle": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(254, 202, 202) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": "#FECACA"
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(239, 68, 68) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#EF4444"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 75.5,
+       "height": 24,
+       "padding": "0px",
+       "fontSize": "16px",
+       "lineHeight": "24px",
+       "borderWidth": "0px",
+       "borderRadius": "0px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(254, 202, 202) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": "#FECACA"
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(254, 202, 202) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#FECACA"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 75.5,
+       "height": 24,
+       "padding": "0px",
+       "fontSize": "16px",
+       "lineHeight": "24px",
+       "borderWidth": "0px",
+       "borderRadius": "0px"
+      }
+     }
+    },
+    {
+     "file": "src/components/settings/RopBonusSettings.tsx",
+     "line": 173,
+     "className": "border-danger ring-1 ring-danger-muted focus:border-danger focus:ring-danger",
+     "before": {
+      "idle": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(254, 202, 202) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": "#FECACA"
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(239, 68, 68) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#EF4444"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 75.5,
+       "height": 24,
+       "padding": "0px",
+       "fontSize": "16px",
+       "lineHeight": "24px",
+       "borderWidth": "0px",
+       "borderRadius": "0px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(254, 202, 202) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": "#FECACA"
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(254, 202, 202) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#FECACA"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 75.5,
+       "height": 24,
+       "padding": "0px",
+       "fontSize": "16px",
+       "lineHeight": "24px",
+       "borderWidth": "0px",
+       "borderRadius": "0px"
+      }
+     }
+    },
+    {
+     "file": "src/components/settings/SettingsPresets.tsx",
+     "line": 84,
+     "className": "bg-surface-raised border-accent ring-1 ring-accent",
+     "before": {
+      "idle": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(180, 83, 9) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": "#B45309"
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(180, 83, 9) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#B45309"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 75.5,
+       "height": 24,
+       "padding": "0px",
+       "fontSize": "16px",
+       "lineHeight": "24px",
+       "borderWidth": "0px",
+       "borderRadius": "0px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(180, 83, 9) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": "#B45309"
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(180, 83, 9) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#B45309"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 75.5,
+       "height": 24,
+       "padding": "0px",
+       "fontSize": "16px",
+       "lineHeight": "24px",
+       "borderWidth": "0px",
+       "borderRadius": "0px"
+      }
+     }
+    },
+    {
+     "file": "src/components/sprint/AddEntryForm.tsx",
+     "line": 414,
+     "className": "rounded-nested ring-2 ring-danger-muted p-2 -m-2",
+     "before": {
+      "idle": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(254, 202, 202) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": "#FECACA"
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(254, 202, 202) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#FECACA"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 91.5,
+       "height": 40,
+       "padding": "8px",
+       "fontSize": "16px",
+       "lineHeight": "24px",
+       "borderWidth": "0px",
+       "borderRadius": "12px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(254, 202, 202) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": "#FECACA"
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(254, 202, 202) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#FECACA"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 91.5,
+       "height": 40,
+       "padding": "8px",
+       "fontSize": "16px",
+       "lineHeight": "24px",
+       "borderWidth": "0px",
+       "borderRadius": "12px"
+      }
+     }
+    },
+    {
+     "file": "src/pages/SettingsPage.tsx",
+     "line": 1353,
+     "className": "ring-2 ring-accent-ring ring-offset-2",
+     "before": {
+      "idle": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(255, 255, 255) 0px 0px 0px 2px, rgb(209, 99, 16) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": "#D16310"
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(255, 255, 255) 0px 0px 0px 2px, rgb(209, 99, 16) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 75.5,
+       "height": 24,
+       "padding": "0px",
+       "fontSize": "16px",
+       "lineHeight": "24px",
+       "borderWidth": "0px",
+       "borderRadius": "0px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(255, 255, 255) 0px 0px 0px 2px, rgb(209, 99, 16) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": "#D16310"
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(255, 255, 255) 0px 0px 0px 2px, rgb(209, 99, 16) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 75.5,
+       "height": 24,
+       "padding": "0px",
+       "fontSize": "16px",
+       "lineHeight": "24px",
+       "borderWidth": "0px",
+       "borderRadius": "0px"
+      }
+     }
+    },
+    {
+     "file": "src/pages/SettingsPage.tsx",
+     "line": 1402,
+     "className": "ring-2 ring-accent-ring ring-offset-2",
+     "before": {
+      "idle": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(255, 255, 255) 0px 0px 0px 2px, rgb(209, 99, 16) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": "#D16310"
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(255, 255, 255) 0px 0px 0px 2px, rgb(209, 99, 16) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 75.5,
+       "height": 24,
+       "padding": "0px",
+       "fontSize": "16px",
+       "lineHeight": "24px",
+       "borderWidth": "0px",
+       "borderRadius": "0px"
+      }
+     },
+     "after": {
+      "idle": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(255, 255, 255) 0px 0px 0px 2px, rgb(209, 99, 16) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(26, 26, 26) none 3px",
+       "outlineColor": "rgb(26, 26, 26)",
+       "outlineWidth": "3px",
+       "outlineStyle": "none",
+       "outlineOffset": "0px",
+       "twRingColor": "#D16310"
+      },
+      "focused": {
+       "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(255, 255, 255) 0px 0px 0px 2px, rgb(209, 99, 16) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+       "outline": "rgb(119, 55, 6) solid 2px",
+       "outlineColor": "rgb(119, 55, 6)",
+       "outlineWidth": "2px",
+       "outlineStyle": "solid",
+       "outlineOffset": "2px",
+       "twRingColor": "#D16310"
+      },
+      "isFocusVisible": true,
+      "box": {
+       "width": 75.5,
+       "height": 24,
+       "padding": "0px",
+       "fontSize": "16px",
+       "lineHeight": "24px",
+       "borderWidth": "0px",
+       "borderRadius": "0px"
+      }
+     }
+    }
+   ]
+  }
+ },
+ "browser": "Google Chrome 154.0.8037.17 beta",
+ "checks": [
+  {
+   "name": "submit-button: contrast 2.28 -> 5.02 (±0.06)",
+   "pass": true,
+   "before": 2.2786093403477246,
+   "after": 5.0155974781114745
+  },
+  {
+   "name": "submit-button: bg hex #22C55E -> #15803D",
+   "pass": true,
+   "before": "#22C55E",
+   "after": "#15803D"
+  },
+  {
+   "name": "submit-button: identical box geometry",
+   "pass": true
+  },
+  {
+   "name": "Input:normal: geometry unchanged old vs new",
+   "pass": true
+  },
+  {
+   "name": "Input:normal: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "Input:normal: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "Input:normal: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "Input:normal: new — focus does NOT change local boxShadow vs idle (no local ring left)",
+   "pass": true
+  },
+  {
+   "name": "Input:normal: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "Input:error: geometry unchanged old vs new",
+   "pass": true
+  },
+  {
+   "name": "Input:error: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "Input:error: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "Input:error: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "Input:error: new — focus does NOT change local boxShadow vs idle (no local ring left)",
+   "pass": true
+  },
+  {
+   "name": "Input:error: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "Textarea:normal: geometry unchanged old vs new",
+   "pass": true
+  },
+  {
+   "name": "Textarea:normal: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "Textarea:normal: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "Textarea:normal: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "Textarea:normal: new — focus does NOT change local boxShadow vs idle (no local ring left)",
+   "pass": true
+  },
+  {
+   "name": "Textarea:normal: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "Textarea:error: geometry unchanged old vs new",
+   "pass": true
+  },
+  {
+   "name": "Textarea:error: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "Textarea:error: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "Textarea:error: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "Textarea:error: new — focus does NOT change local boxShadow vs idle (no local ring left)",
+   "pass": true
+  },
+  {
+   "name": "Textarea:error: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "Select:normal: geometry unchanged old vs new",
+   "pass": true
+  },
+  {
+   "name": "Select:normal: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "Select:normal: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "Select:normal: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "Select:normal: new — focus does NOT change local boxShadow vs idle (no local ring left)",
+   "pass": true
+  },
+  {
+   "name": "Select:normal: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "Select:error: geometry unchanged old vs new",
+   "pass": true
+  },
+  {
+   "name": "Select:error: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "Select:error: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "Select:error: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "Select:error: new — focus does NOT change local boxShadow vs idle (no local ring left)",
+   "pass": true
+  },
+  {
+   "name": "Select:error: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[1]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[1]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[1]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[1]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[1]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[1]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[2]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[2]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[2]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[2]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[2]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[2]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[3]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[3]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[3]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[3]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[3]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[3]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[4]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[4]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[4]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[4]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[4]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[4]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[5]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[5]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[5]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[5]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[5]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[5]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[6]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[6]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[6]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[6]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[6]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[6]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[7]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[7]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[7]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[7]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[7]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[7]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[8]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[8]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[8]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[8]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[8]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[8]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[9]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[9]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[9]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[9]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[9]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[9]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[10]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[10]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[10]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[10]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[10]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[10]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[11]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[11]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[11]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[11]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[11]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[11]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[12]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[12]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[12]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[12]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[12]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[12]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[13]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[13]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[13]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[13]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[13]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[13]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[14]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[14]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[14]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[14]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[14]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[14]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[15]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[15]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[15]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[15]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[15]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[15]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[16]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[16]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[16]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[16]: old — focus changed ring color (width comes from a separate recipe) vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[16]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[16]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[17]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[17]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[17]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[17]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[17]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[17]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[18]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[18]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[18]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[18]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[18]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[18]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[19]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[19]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[19]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[19]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[19]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[19]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[20]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[20]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[20]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[20]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[20]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[20]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[21]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[21]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[21]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[21]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[21]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[21]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[22]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[22]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[22]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[22]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[22]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[22]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[23]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[23]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[23]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[23]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[23]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[23]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[24]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[24]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[24]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[24]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[24]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[24]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[25]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[25]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[25]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[25]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[25]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[25]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[26]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[26]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[26]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[26]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[26]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[26]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[27]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[27]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[27]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[27]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[27]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[27]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[28]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[28]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[28]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[28]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[28]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[28]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[29]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[29]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[29]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[29]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[29]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[29]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[30]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[30]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[30]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[30]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[30]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[30]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[31]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[31]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[31]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[31]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[31]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[31]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[32]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[32]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[32]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[32]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[32]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[32]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[33]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[33]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[33]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[33]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[33]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[33]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[34]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[34]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[34]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[34]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[34]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[34]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[35]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[35]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[35]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[35]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[35]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[35]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[36]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[36]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[36]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[36]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[36]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[36]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[37]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[37]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[37]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[37]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[37]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[37]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[38]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[38]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[38]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[38]: old — focus changed ring color (width comes from a separate recipe) vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[38]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[38]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[39]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[39]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[39]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[39]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[39]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[39]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[40]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[40]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[40]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[40]: old — focus changed ring color (width comes from a separate recipe) vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[40]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[40]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[41]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[41]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[41]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[41]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[41]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[41]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[42]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[42]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[42]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[42]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[42]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[42]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[43]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[43]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[43]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[43]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[43]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[43]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[44]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[44]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[44]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[44]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[44]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[44]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[45]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[45]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[45]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[45]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[45]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[45]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[46]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[46]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[46]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[46]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[46]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[46]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[47]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[47]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[47]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[47]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[47]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[47]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "removed[48]: geometry unchanged",
+   "pass": true
+  },
+  {
+   "name": "removed[48]: keyboard modality proven (before)",
+   "pass": true
+  },
+  {
+   "name": "removed[48]: keyboard modality proven (after)",
+   "pass": true
+  },
+  {
+   "name": "removed[48]: old — focus changed local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[48]: new — focus does NOT change local boxShadow vs idle",
+   "pass": true
+  },
+  {
+   "name": "removed[48]: new — global outline #773706 2px offset 2px on focus",
+   "pass": true
+  },
+  {
+   "name": "permanent[src/components/admin/NormPresetPicker.tsx:84]: idle boxShadow unchanged old vs new (decorative ring preserved)",
+   "pass": true
+  },
+  {
+   "name": "permanent[src/components/admin/NormPresetPicker.tsx:84]: geometry unchanged old vs new",
+   "pass": true
+  },
+  {
+   "name": "permanent[src/components/crm/CrmConnectWizard.tsx:98]: idle boxShadow unchanged old vs new (decorative ring preserved)",
+   "pass": true
+  },
+  {
+   "name": "permanent[src/components/crm/CrmConnectWizard.tsx:98]: geometry unchanged old vs new",
+   "pass": true
+  },
+  {
+   "name": "permanent[src/components/settings/RopBonusSettings.tsx:158]: idle boxShadow unchanged old vs new (decorative ring preserved)",
+   "pass": true
+  },
+  {
+   "name": "permanent[src/components/settings/RopBonusSettings.tsx:158]: geometry unchanged old vs new",
+   "pass": true
+  },
+  {
+   "name": "permanent[src/components/settings/RopBonusSettings.tsx:173]: idle boxShadow unchanged old vs new (decorative ring preserved)",
+   "pass": true
+  },
+  {
+   "name": "permanent[src/components/settings/RopBonusSettings.tsx:173]: geometry unchanged old vs new",
+   "pass": true
+  },
+  {
+   "name": "permanent[src/components/settings/SettingsPresets.tsx:84]: idle boxShadow unchanged old vs new (decorative ring preserved)",
+   "pass": true
+  },
+  {
+   "name": "permanent[src/components/settings/SettingsPresets.tsx:84]: geometry unchanged old vs new",
+   "pass": true
+  },
+  {
+   "name": "permanent[src/components/sprint/AddEntryForm.tsx:414]: idle boxShadow unchanged old vs new (decorative ring preserved)",
+   "pass": true
+  },
+  {
+   "name": "permanent[src/components/sprint/AddEntryForm.tsx:414]: geometry unchanged old vs new",
+   "pass": true
+  },
+  {
+   "name": "permanent[src/pages/SettingsPage.tsx:1353]: idle boxShadow unchanged old vs new (decorative ring preserved)",
+   "pass": true
+  },
+  {
+   "name": "permanent[src/pages/SettingsPage.tsx:1353]: geometry unchanged old vs new",
+   "pass": true
+  },
+  {
+   "name": "permanent[src/pages/SettingsPage.tsx:1402]: idle boxShadow unchanged old vs new (decorative ring preserved)",
+   "pass": true
+  },
+  {
+   "name": "permanent[src/pages/SettingsPage.tsx:1402]: geometry unchanged old vs new",
+   "pass": true
+  }
+ ],
+ "summary": {
+  "total": 343,
+  "passed": 343,
+  "failed": []
+ }
+}

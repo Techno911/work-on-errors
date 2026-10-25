@@ -1,0 +1,36 @@
+{
+  "name": "chip-frontend",
+  "private": true,
+  "version": "8.7.0",
+  "type": "module",
+  "scripts": {
+    "predev": "node scripts/generate-design-roles.mjs",
+    "dev": "vite",
+    "check": "node scripts/shell-canon-gate.mjs",
+    "build": "node scripts/generate-design-roles.mjs && node scripts/version-sync.mjs && node scripts/no-lossy-cn.mjs && node scripts/no-raw-select.mjs && node scripts/no-raw-input.mjs && node scripts/no-raw-color.mjs && node scripts/no-raw-button.mjs && node scripts/no-raw-card.mjs && node scripts/no-standalone-badge.mjs && node scripts/one-focus-ring.mjs && node scripts/no-offscale.mjs && node scripts/no-white-on-fill.mjs && node scripts/no-weak-fill.mjs && node scripts/no-faint-as-text.mjs && node scripts/no-em-dash.mjs && node scripts/no-add-entry-on-closed-sprint.mjs && node scripts/sprint-board-asks-current.mjs && node scripts/release-notes-check.mjs && node scripts/static-brand-assets-check.mjs && node scripts/shell-canon-gate.mjs && tsc -b && vite build && node scripts/build-og-routes.mjs",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@chirkov/shell": "file:../packages/ui",
+    "axios": "^1.7.9",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.468.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.1.0",
+    "recharts": "^3.8.0",
+    "sonner": "^2.0.7",
+    "tailwind-merge": "^2.6.0",
+    "zustand": "^5.0.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "tailwindcss": "^4.0.0",
+    "typescript": "~5.7.2",
+    "vite": "^6.1.0"
+  }
+}

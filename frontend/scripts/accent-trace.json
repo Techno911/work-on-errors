@@ -1,0 +1,2616 @@
+{
+  "коммит": "eeb37f6",
+  "основание": {
+    "дата": "2026-09-17",
+    "решение": "Владелец выбрал янтарь (1133c3d) и поручил удалить числовое семейство после разбора всех расхождений. Значения ролей не менялись. Закрытие долга 14.09.2026 по поручению владельца: убрать устаревший допуск белого текста, устранить локальные кольца фокуса и объяснить каждый снимок. Значения палитры не менялись. Довесок 14.09.2026 (закрытие дыры контраста нетекстовой графики): глобальная обводка :focus-visible переведена с accent-pressed (#773706, 1,93:1 на surface-inverse) на accent-ring (#D16310, ≥3:1 на всех пяти поверхностях) — та же дыра, что нашлась на Бренд-платформе: one-focus-ring.mjs проверял только форму обводки, а контраст роли против фона не мерил вовсе. Значения обеих ролей не менялись, менялось только назначение (какая роль стоит в :focus-visible). Новая проверка checkRingContrast встроена в one-focus-ring.mjs и гоняется при каждой сборке. Довесок 16.09.2026 (смена роли сотрудника владельцем): в карточке человека на вкладке «Команда» появилось подтверждение смены роли между менеджером и РОПом. Кнопка подтверждения взяла роль accent-solid с наведением accent-strong, как у прочих неразрушающих подтверждений платформы; красный danger-fg здесь неуместен, потому что действие обратимо и ничего не удаляет. Значения ролей не менялись, добавились два назначения в одном файле. Довесок 16.09.2026 (канон оболочки платформ ЧиП 1.0, поручение владельца о единых повторяющихся элементах): три самодельные пустые состояния (ManagerSection, CrmCallPicker, DashboardPage) переведены на общий компонент EmptyState. Это доказанный перенос назначений в общий компонент, а не смена палитры: из ManagerSection ушёл один accent-subtle, в EmptyState появились accent-subtle и accent-strong, значения ролей и их имена не менялись, новых имён нет. Довесок 16.09.2026 (владелец сам отказывается от премии РОПа): на карточке предложения премии появился третий ответ «Премия не нужна» и подтверждение отказа вторым нажатием. Подтверждающая кнопка «Да, премии не будет» повторяет роль accent-solid с наведением accent-public, как у соседней кнопки «Согласен, подключить» того же блока: действие обратимо (премию можно включить обратно тумблером в нормативах), поэтому красный danger-fg не берётся. Сам вход «Премия не нужна» намеренно без акцента (text-fg-subtle), чтобы не спорить с рекомендацией. Значения ролей не менялись, добавились два назначения в одном файле. Довесок 17.09.2026 (канон оболочки платформ ЧиП 1.0, раздел 11 — экран входа, поручение владельца свести раскладку входа с донором Бренд-платформа/Точка): круглые плашки номеров 01/02/03 в тёмной панели переведены с нейтральной заливки on-dark-faint-strong на роль accent-ring — заливка color-mix(in srgb, accent-ring 15%, transparent) и сплошной текст accent-ring, 1-в-1 с приёмом донора (там это accent-on-dark-hover/15 и accent-on-dark, аналог в словаре ролей РО — accent-ring). Значение роли не менялось, добавились два новых обращения к accent-ring в файле, ранее её не использовавшем. Довесок 17.09.2026 (решение владельца: главная кнопка сведена к базовой роли акцента, как у остальных платформ ЧиП, канон оболочки 1.1 «Открытый вопрос»): variant=\"primary\" в button.tsx переведён с accent-strong (#8F4207) в покое на accent-solid (#B45309), наведение переведено с accent-pressed на accent-strong — тот же приём заливка/наведение, что уже стоит в ErrorBoundary.tsx и TelegramLinkButton.tsx. Контраст белого текста на accent-solid 5,02:1 (не ниже 4,5:1), на accent-strong при наведении 7,12:1 — ступени покой/наведение/недоступна не схлопнулись, проверено глазами на экране входа (три состояния) и по коду сиблингов. Значения ролей не менялись, изменилось назначение в одном файле. Довесок 20.09.2026 (перевод экрана входа Работы над ошибками на общий пакет @chirkov/shell 0.1.6): локальные accent-роли на \"Забыли пароль?\" (text-accent, hover:text-accent-strong) убраны вместе с платформенной Button — кнопка перешла на пакетный variant=\"link\", который красит текст своими токенами внутри пакета, вне области этого замка (он проверяет frontend/backend, не node_modules). В файле остались accent-ring (кружки цифр обещания слева) и accent/accent-solid (accent-color чекбокса \"Запомнить меня\"), значения ролей не менялись, назначений стало меньше не из-за смены палитры, а из-за переноса контрола в общий компонент.",
+    "исходныйКоммит": "b10a08b",
+    "базаВида": "7cb417b: все 87 следов исходного снимка совпадают; прежнее поле 179a9b8 не учитывало отдельную правку Input.",
+    "ход": "ro-ostatok/accent: 35 файлов следа разобраны до удаления объявлений; bc1e71f удалил семейство и сохранил обводку, a5aaf50 сменил вопрос замка. Снимок записан последним. Проверка изолированного frontend-контекста выявила обход прямого запуска через символьный путь; 5db63d3 исправил вход, след остался дословно прежним. Финальная запись снимка сделана после этой проверки.",
+    "проверка": "Сборка фронта с полным набором гейтов (no-raw-*, one-focus-ring, no-accent-drift) плюс прогон замка после записи снимка.",
+    "счёт": {
+      "messages": 37,
+      "renameSameCount": 24,
+      "changedOldCount": 11,
+      "declarationDiagnostics": 2,
+      "realCountChanges": 9,
+      "falseCountChanges": 2
+    },
+    "разбор": [
+      {
+        "файл": "frontend/src/components/access/PaymentHold.tsx",
+        "вид": "а: имя, то же значение",
+        "было": 2,
+        "старыйСчётчик": 2,
+        "реально": 2,
+        "вывод": "Все позиции: одинаковое CSS-свойство/вариант и тот же цвет. Соответствия ролей вычислены Chromium."
+      },
+      {
+        "файл": "frontend/src/components/admin/NormPresetPicker.tsx",
+        "вид": "б: изменился счёт старого замка",
+        "было": 7,
+        "старыйСчётчик": 6,
+        "реально": 6,
+        "вывод": "Рамка ушла в Badge outline/accent; внешняя заливка и text-accent-strong сохранены."
+      },
+      {
+        "файл": "frontend/src/components/analytics/ActivityPatternsChart.tsx",
+        "вид": "а: имя, то же значение",
+        "было": 2,
+        "старыйСчётчик": 2,
+        "реально": 2,
+        "вывод": "Все позиции: одинаковое CSS-свойство/вариант и тот же цвет. Соответствия ролей вычислены Chromium."
+      },
+      {
+        "файл": "frontend/src/components/analytics/ErrorTrendChart.tsx",
+        "вид": "а: имя, то же значение",
+        "было": 3,
+        "старыйСчётчик": 3,
+        "реально": 3,
+        "вывод": "Все позиции: одинаковое CSS-свойство/вариант и тот же цвет. Соответствия ролей вычислены Chromium."
+      },
+      {
+        "файл": "frontend/src/components/analytics/ManagerStatsTable.tsx",
+        "вид": "а: имя, то же значение",
+        "было": 1,
+        "старыйСчётчик": 1,
+        "реально": 1,
+        "вывод": "Все позиции: одинаковое CSS-свойство/вариант и тот же цвет. Соответствия ролей вычислены Chromium."
+      },
+      {
+        "файл": "frontend/src/components/attestation/TestCard.tsx",
+        "вид": "б: изменился счёт старого замка",
+        "было": 5,
+        "старыйСчётчик": 4,
+        "реально": 4,
+        "вывод": "Заливка ai_graded ушла в Badge soft/accent, внешний text-accent-fg сохранил текст."
+      },
+      {
+        "файл": "frontend/src/components/auth/ProtectedRoute.tsx",
+        "вид": "а: имя, то же значение",
+        "было": 1,
+        "старыйСчётчик": 1,
+        "реально": 1,
+        "вывод": "Все позиции: одинаковое CSS-свойство/вариант и тот же цвет. Соответствия ролей вычислены Chromium."
+      },
+      {
+        "файл": "frontend/src/components/dashboard/DeadlineCountdownBanner.tsx",
+        "вид": "б: изменился счёт старого замка",
+        "было": 3,
+        "старыйСчётчик": 4,
+        "реально": 4,
+        "вывод": "Одна переменная разделена на роли знака и заливки; обе поверхности измерены отдельно (Deadline-text и Deadline-link)."
+      },
+      {
+        "файл": "frontend/src/components/dashboard/RopBonusCard.tsx",
+        "вид": "б: изменился счёт старого замка",
+        "было": 8,
+        "старыйСчётчик": 7,
+        "реально": 7,
+        "вывод": "Текст статуса Идёт по плану ушёл в Badge soft/accent (#773706); заливка переопределена на прежнюю #F9E4D4."
+      },
+      {
+        "файл": "frontend/src/components/dashboard/RopBonusProposalCard.tsx",
+        "вид": "а: имя, то же значение",
+        "было": 8,
+        "старыйСчётчик": 8,
+        "реально": 8,
+        "вывод": "Все позиции: одинаковое CSS-свойство/вариант и тот же цвет. Соответствия ролей вычислены Chromium."
+      },
+      {
+        "файл": "frontend/src/components/layout/AppLayout.tsx",
+        "вид": "а: имя, то же значение",
+        "было": 1,
+        "старыйСчётчик": 1,
+        "реально": 1,
+        "вывод": "Все позиции: одинаковое CSS-свойство/вариант и тот же цвет. Соответствия ролей вычислены Chromium."
+      },
+      {
+        "файл": "frontend/src/components/notifications/NotificationBell.tsx",
+        "вид": "а: имя, то же значение",
+        "было": 4,
+        "старыйСчётчик": 4,
+        "реально": 4,
+        "вывод": "Все позиции: одинаковое CSS-свойство/вариант и тот же цвет. Соответствия ролей вычислены Chromium."
+      },
+      {
+        "файл": "frontend/src/components/onboarding/FirstStepsCard.tsx",
+        "вид": "б: изменился счёт старого замка",
+        "было": 6,
+        "старыйСчётчик": 5,
+        "реально": 5,
+        "вывод": "Заливка примера тега переехала в Badge solid/accent; белый текст сохранён."
+      },
+      {
+        "файл": "frontend/src/components/onboarding/UserTour.tsx",
+        "вид": "а: имя, то же значение",
+        "было": 7,
+        "старыйСчётчик": 7,
+        "реально": 7,
+        "вывод": "Все позиции: одинаковое CSS-свойство/вариант и тот же цвет. Соответствия ролей вычислены Chromium."
+      },
+      {
+        "файл": "frontend/src/components/onboarding/WhatsNewModal.tsx",
+        "вид": "б: изменился счёт старого замка",
+        "было": 10,
+        "старыйСчётчик": 9,
+        "реально": 10,
+        "вывод": "Ложное уменьшение: старый извлекатель не видел accent-pressed. Реально 10 → 10."
+      },
+      {
+        "файл": "frontend/src/components/settings/ChangePasswordCard.tsx",
+        "вид": "а: имя, то же значение",
+        "было": 6,
+        "старыйСчётчик": 6,
+        "реально": 6,
+        "вывод": "Все позиции: одинаковое CSS-свойство/вариант и тот же цвет. Соответствия ролей вычислены Chromium."
+      },
+      {
+        "файл": "frontend/src/components/settings/CrmIntegrationSettings.tsx",
+        "вид": "б: изменился счёт старого замка",
+        "было": 9,
+        "старыйСчётчик": 7,
+        "реально": 7,
+        "вывод": "Текст и рамка счётчика сотрудников из CRM перешли в Badge outline/accent; прежняя подложка сохранена."
+      },
+      {
+        "файл": "frontend/src/components/settings/RopBonusSettings.tsx",
+        "вид": "а: имя, то же значение",
+        "было": 11,
+        "старыйСчётчик": 11,
+        "реально": 11,
+        "вывод": "Все позиции: одинаковое CSS-свойство/вариант и тот же цвет. Соответствия ролей вычислены Chromium."
+      },
+      {
+        "файл": "frontend/src/components/settings/SettingsPresets.tsx",
+        "вид": "б: изменился счёт старого замка",
+        "было": 9,
+        "старыйСчётчик": 8,
+        "реально": 8,
+        "вывод": "Рамка Активен перешла в Badge outline/accent, текст #8F4207 и подложка сохранены."
+      },
+      {
+        "файл": "frontend/src/components/settings/TelegramLinkButton.tsx",
+        "вид": "а: имя, то же значение",
+        "было": 4,
+        "старыйСчётчик": 4,
+        "реально": 4,
+        "вывод": "Все позиции: одинаковое CSS-свойство/вариант и тот же цвет. Соответствия ролей вычислены Chromium."
+      },
+      {
+        "файл": "frontend/src/components/settings/TranscriptionSettingsCard.tsx",
+        "вид": "а: имя, то же значение",
+        "было": 3,
+        "старыйСчётчик": 3,
+        "реально": 3,
+        "вывод": "Все позиции: одинаковое CSS-свойство/вариант и тот же цвет. Соответствия ролей вычислены Chromium."
+      },
+      {
+        "файл": "frontend/src/components/sprint/ReviewerForm.tsx",
+        "вид": "а: имя, то же значение",
+        "было": 16,
+        "старыйСчётчик": 16,
+        "реально": 16,
+        "вывод": "Все позиции: одинаковое CSS-свойство/вариант и тот же цвет. Соответствия ролей вычислены Chromium."
+      },
+      {
+        "файл": "frontend/src/components/ui/InfoHint.tsx",
+        "вид": "а: имя, то же значение",
+        "было": 1,
+        "старыйСчётчик": 1,
+        "реально": 1,
+        "вывод": "Все позиции: одинаковое CSS-свойство/вариант и тот же цвет. Соответствия ролей вычислены Chromium."
+      },
+      {
+        "файл": "frontend/src/components/ui/avatar.tsx",
+        "вид": "а: имя, то же значение",
+        "было": 1,
+        "старыйСчётчик": 1,
+        "реально": 1,
+        "вывод": "Все позиции: одинаковое CSS-свойство/вариант и тот же цвет. Соответствия ролей вычислены Chromium."
+      },
+      {
+        "файл": "frontend/src/components/ui/badge.tsx",
+        "вид": "б: изменился счёт старого замка",
+        "было": 2,
+        "старыйСчётчик": 5,
+        "реально": 6,
+        "вывод": "К прежнему soft добавлены рецепты solid и outline для перенесённых плашек. Реальный прямой след 2 → 6; прежний soft проверен, новые рецепты проверены на потребителях."
+      },
+      {
+        "файл": "frontend/src/components/ui/button.tsx",
+        "вид": "б: изменился счёт старого замка",
+        "было": 5,
+        "старыйСчётчик": 3,
+        "реально": 5,
+        "вывод": "Ложное уменьшение: два accent-pressed не видны старому извлекателю. Реально 5 → 5. Primary/secondary проверены в покое и при hover."
+      },
+      {
+        "файл": "frontend/src/components/ui/input.tsx",
+        "вид": "а: имя, то же значение",
+        "было": 2,
+        "старыйСчётчик": 2,
+        "реально": 2,
+        "вывод": "Все позиции: одинаковое CSS-свойство/вариант и тот же цвет. Соответствия ролей вычислены Chromium."
+      },
+      {
+        "файл": "frontend/src/pages/InvitePage.tsx",
+        "вид": "а: имя, то же значение",
+        "было": 16,
+        "старыйСчётчик": 16,
+        "реально": 16,
+        "вывод": "Все позиции: одинаковое CSS-свойство/вариант и тот же цвет. Соответствия ролей вычислены Chromium."
+      },
+      {
+        "файл": "frontend/src/pages/LoginPage.tsx",
+        "вид": "а: имя, то же значение",
+        "было": 5,
+        "старыйСчётчик": 5,
+        "реально": 5,
+        "вывод": "Все позиции: одинаковое CSS-свойство/вариант и тот же цвет. Соответствия ролей вычислены Chromium."
+      },
+      {
+        "файл": "frontend/src/pages/OfferPage.tsx",
+        "вид": "а: имя, то же значение",
+        "было": 19,
+        "старыйСчётчик": 19,
+        "реально": 19,
+        "вывод": "Все позиции: одинаковое CSS-свойство/вариант и тот же цвет. Соответствия ролей вычислены Chromium."
+      },
+      {
+        "файл": "frontend/src/pages/PdnConsentPage.tsx",
+        "вид": "а: имя, то же значение",
+        "было": 7,
+        "старыйСчётчик": 7,
+        "реально": 7,
+        "вывод": "Все позиции: одинаковое CSS-свойство/вариант и тот же цвет. Соответствия ролей вычислены Chromium."
+      },
+      {
+        "файл": "frontend/src/pages/RopBonusOfferPage.tsx",
+        "вид": "а: имя, то же значение",
+        "было": 20,
+        "старыйСчётчик": 20,
+        "реально": 20,
+        "вывод": "Все позиции: одинаковое CSS-свойство/вариант и тот же цвет. Соответствия ролей вычислены Chromium."
+      },
+      {
+        "файл": "frontend/src/pages/SettingsPage.tsx",
+        "вид": "а: имя, то же значение",
+        "было": 77,
+        "старыйСчётчик": 77,
+        "реально": 77,
+        "вывод": "Все позиции: одинаковое CSS-свойство/вариант и тот же цвет. Соответствия ролей вычислены Chromium."
+      },
+      {
+        "файл": "frontend/src/pages/SprintBoardPage.tsx",
+        "вид": "а: имя, то же значение",
+        "было": 6,
+        "старыйСчётчик": 6,
+        "реально": 6,
+        "вывод": "Все позиции: одинаковое CSS-свойство/вариант и тот же цвет. Соответствия ролей вычислены Chromium."
+      },
+      {
+        "файл": "frontend/src/pages/admin/CompanyDetailPage.tsx",
+        "вид": "б: изменился счёт старого замка",
+        "было": 85,
+        "старыйСчётчик": 83,
+        "реально": 83,
+        "вывод": "Текст и рамка плашки роли РОП перешли в Badge outline/accent, фон сохранён."
+      }
+    ],
+    "объявления": [
+      "accent-pressed отсутствовал в словаре снимка; #773706 идентичен прежнему v3-700, измерен браузером",
+      "Объявлений стало 20 вместо 19: та же новая роль; удаление 8 объявлений оставляет 12 ролей и 10 уникальных значений"
+    ],
+    "дополнительнаяСсылка": "Глобальная :focus-visible в index.css:209 исходной вершины переименована в accent-pressed. outlineColor rgb(119, 55, 6), 2px solid сохранён.",
+    "потери": [],
+    "измерения": {
+      "NormPresetPicker": {
+        "до": {
+          "color": "rgb(143, 66, 7)",
+          "backgroundColor": "rgb(255, 255, 255)",
+          "borderColor": "rgb(243, 199, 165)",
+          "borderWidth": "1px",
+          "boxShadow": "none",
+          "outlineColor": "rgb(143, 66, 7)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(143, 66, 7)",
+          "backgroundColor": "rgb(255, 255, 255)",
+          "borderColor": "rgb(243, 199, 165)",
+          "borderWidth": "1px",
+          "boxShadow": "none",
+          "outlineColor": "rgb(143, 66, 7)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "TestCard": {
+        "до": {
+          "color": "rgb(148, 68, 7)",
+          "backgroundColor": "rgb(252, 242, 235)",
+          "borderColor": "rgb(148, 68, 7)",
+          "borderWidth": "0px",
+          "boxShadow": "none",
+          "outlineColor": "rgb(148, 68, 7)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(148, 68, 7)",
+          "backgroundColor": "rgb(252, 242, 235)",
+          "borderColor": "rgba(0, 0, 0, 0)",
+          "borderWidth": "0px",
+          "boxShadow": "none",
+          "outlineColor": "rgb(148, 68, 7)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "RopBonusCard": {
+        "до": {
+          "color": "rgb(119, 55, 6)",
+          "backgroundColor": "rgb(249, 228, 212)",
+          "borderColor": "rgb(119, 55, 6)",
+          "borderWidth": "0px",
+          "boxShadow": "none",
+          "outlineColor": "rgb(119, 55, 6)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(119, 55, 6)",
+          "backgroundColor": "rgb(249, 228, 212)",
+          "borderColor": "rgba(0, 0, 0, 0)",
+          "borderWidth": "0px",
+          "boxShadow": "none",
+          "outlineColor": "rgb(119, 55, 6)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "FirstStepsCard": {
+        "до": {
+          "color": "rgb(255, 255, 255)",
+          "backgroundColor": "rgb(180, 83, 9)",
+          "borderColor": "rgb(255, 255, 255)",
+          "borderWidth": "0px",
+          "boxShadow": "none",
+          "outlineColor": "rgb(255, 255, 255)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(255, 255, 255)",
+          "backgroundColor": "rgb(180, 83, 9)",
+          "borderColor": "rgb(180, 83, 9)",
+          "borderWidth": "0px",
+          "boxShadow": "none",
+          "outlineColor": "rgb(255, 255, 255)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "CrmIntegrationSettings": {
+        "до": {
+          "color": "rgb(148, 68, 7)",
+          "backgroundColor": "rgb(252, 242, 235)",
+          "borderColor": "rgb(243, 199, 165)",
+          "borderWidth": "1px",
+          "boxShadow": "none",
+          "outlineColor": "rgb(148, 68, 7)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(148, 68, 7)",
+          "backgroundColor": "rgb(252, 242, 235)",
+          "borderColor": "rgb(243, 199, 165)",
+          "borderWidth": "1px",
+          "boxShadow": "none",
+          "outlineColor": "rgb(148, 68, 7)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "SettingsPresets": {
+        "до": {
+          "color": "rgb(143, 66, 7)",
+          "backgroundColor": "rgb(252, 242, 235)",
+          "borderColor": "rgb(243, 199, 165)",
+          "borderWidth": "1px",
+          "boxShadow": "none",
+          "outlineColor": "rgb(143, 66, 7)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(143, 66, 7)",
+          "backgroundColor": "rgb(252, 242, 235)",
+          "borderColor": "rgb(243, 199, 165)",
+          "borderWidth": "1px",
+          "boxShadow": "none",
+          "outlineColor": "rgb(143, 66, 7)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "CompanyDetailPage-reviewer": {
+        "до": {
+          "color": "rgb(148, 68, 7)",
+          "backgroundColor": "rgb(252, 242, 235)",
+          "borderColor": "rgb(243, 199, 165)",
+          "borderWidth": "1px",
+          "boxShadow": "none",
+          "outlineColor": "rgb(148, 68, 7)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(148, 68, 7)",
+          "backgroundColor": "rgb(252, 242, 235)",
+          "borderColor": "rgb(243, 199, 165)",
+          "borderWidth": "1px",
+          "boxShadow": "none",
+          "outlineColor": "rgb(148, 68, 7)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "WhatsNewModal": {
+        "до": {
+          "color": "rgb(119, 55, 6)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(119, 55, 6)",
+          "borderWidth": "0px",
+          "boxShadow": "none",
+          "outlineColor": "rgb(119, 55, 6)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(119, 55, 6)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(119, 55, 6)",
+          "borderWidth": "0px",
+          "boxShadow": "none",
+          "outlineColor": "rgb(119, 55, 6)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "Deadline-text": {
+        "до": {
+          "color": "rgb(180, 83, 9)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(180, 83, 9)",
+          "borderWidth": "0px",
+          "boxShadow": "none",
+          "outlineColor": "rgb(180, 83, 9)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(180, 83, 9)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(180, 83, 9)",
+          "borderWidth": "0px",
+          "boxShadow": "none",
+          "outlineColor": "rgb(180, 83, 9)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "Deadline-link": {
+        "до": {
+          "color": "rgb(255, 255, 255)",
+          "backgroundColor": "rgb(180, 83, 9)",
+          "borderColor": "rgb(255, 255, 255)",
+          "borderWidth": "0px",
+          "boxShadow": "none",
+          "outlineColor": "rgb(255, 255, 255)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(255, 255, 255)",
+          "backgroundColor": "rgb(180, 83, 9)",
+          "borderColor": "rgb(255, 255, 255)",
+          "borderWidth": "0px",
+          "boxShadow": "none",
+          "outlineColor": "rgb(255, 255, 255)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "Badge-soft": {
+        "до": {
+          "color": "rgb(119, 55, 6)",
+          "backgroundColor": "rgb(252, 242, 235)",
+          "borderColor": "rgba(0, 0, 0, 0)",
+          "borderWidth": "1px",
+          "boxShadow": "none",
+          "outlineColor": "rgb(119, 55, 6)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(119, 55, 6)",
+          "backgroundColor": "rgb(252, 242, 235)",
+          "borderColor": "rgba(0, 0, 0, 0)",
+          "borderWidth": "1px",
+          "boxShadow": "none",
+          "outlineColor": "rgb(119, 55, 6)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "Button-primary": {
+        "до": {
+          "color": "rgb(255, 255, 255)",
+          "backgroundColor": "rgb(143, 66, 7)",
+          "borderColor": "rgb(255, 255, 255)",
+          "borderWidth": "0px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(26, 26, 26, 0.06) 0px 1px 2px 0px, rgba(26, 26, 26, 0.04) 0px 0px 0px 1px",
+          "outlineColor": "rgb(255, 255, 255)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(255, 255, 255)",
+          "backgroundColor": "rgb(143, 66, 7)",
+          "borderColor": "rgb(255, 255, 255)",
+          "borderWidth": "0px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(26, 26, 26, 0.06) 0px 1px 2px 0px, rgba(26, 26, 26, 0.04) 0px 0px 0px 1px",
+          "outlineColor": "rgb(255, 255, 255)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "Button-primary-hover": {
+        "до": {
+          "color": "rgb(255, 255, 255)",
+          "backgroundColor": "rgb(119, 55, 6)",
+          "borderColor": "rgb(255, 255, 255)",
+          "borderWidth": "0px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(26, 26, 26, 0.06) 0px 1px 2px 0px, rgba(26, 26, 26, 0.04) 0px 0px 0px 1px",
+          "outlineColor": "rgb(255, 255, 255)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(255, 255, 255)",
+          "backgroundColor": "rgb(119, 55, 6)",
+          "borderColor": "rgb(255, 255, 255)",
+          "borderWidth": "0px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(26, 26, 26, 0.06) 0px 1px 2px 0px, rgba(26, 26, 26, 0.04) 0px 0px 0px 1px",
+          "outlineColor": "rgb(255, 255, 255)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "Button-secondary": {
+        "до": {
+          "color": "rgb(119, 55, 6)",
+          "backgroundColor": "rgb(252, 242, 235)",
+          "borderColor": "rgb(119, 55, 6)",
+          "borderWidth": "0px",
+          "boxShadow": "none",
+          "outlineColor": "rgb(119, 55, 6)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(119, 55, 6)",
+          "backgroundColor": "rgb(252, 242, 235)",
+          "borderColor": "rgb(119, 55, 6)",
+          "borderWidth": "0px",
+          "boxShadow": "none",
+          "outlineColor": "rgb(119, 55, 6)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "Button-secondary-hover": {
+        "до": {
+          "color": "rgb(119, 55, 6)",
+          "backgroundColor": "rgb(249, 228, 212)",
+          "borderColor": "rgb(119, 55, 6)",
+          "borderWidth": "0px",
+          "boxShadow": "none",
+          "outlineColor": "rgb(119, 55, 6)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(119, 55, 6)",
+          "backgroundColor": "rgb(249, 228, 212)",
+          "borderColor": "rgb(119, 55, 6)",
+          "borderWidth": "0px",
+          "boxShadow": "none",
+          "outlineColor": "rgb(119, 55, 6)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "Input": {
+        "до": {
+          "color": "rgb(26, 26, 26)",
+          "backgroundColor": "rgb(255, 255, 255)",
+          "borderColor": "rgb(231, 229, 228)",
+          "borderWidth": "1px",
+          "boxShadow": "none",
+          "outlineColor": "rgb(26, 26, 26)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(26, 26, 26)",
+          "backgroundColor": "rgb(255, 255, 255)",
+          "borderColor": "rgb(231, 229, 228)",
+          "borderWidth": "1px",
+          "boxShadow": "none",
+          "outlineColor": "rgb(26, 26, 26)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "Input-focus": {
+        "до": {
+          "color": "rgb(26, 26, 26)",
+          "backgroundColor": "rgb(255, 255, 255)",
+          "borderColor": "rgb(209, 99, 16)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(249, 228, 212) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(119, 55, 6)",
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(26, 26, 26)",
+          "backgroundColor": "rgb(255, 255, 255)",
+          "borderColor": "rgb(209, 99, 16)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(249, 228, 212) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(119, 55, 6)",
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "opacity": "1"
+        }
+      },
+      "Global-focus": {
+        "до": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(0, 0, 0)",
+          "borderWidth": "0px",
+          "boxShadow": "none",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(0, 0, 0)",
+          "borderWidth": "0px",
+          "boxShadow": "none",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "Global-focus-focus": {
+        "до": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(0, 0, 0)",
+          "borderWidth": "0px",
+          "boxShadow": "none",
+          "outlineColor": "rgb(119, 55, 6)",
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(0, 0, 0)",
+          "borderWidth": "0px",
+          "boxShadow": "none",
+          "outlineColor": "rgb(119, 55, 6)",
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "opacity": "1"
+        }
+      },
+      "map-50-text": {
+        "до": {
+          "color": "rgb(252, 242, 235)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(252, 242, 235)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(252, 242, 235) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(252, 242, 235)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(252, 242, 235)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(252, 242, 235)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(252, 242, 235) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(252, 242, 235)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "map-50-bg": {
+        "до": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgb(252, 242, 235)",
+          "borderColor": "rgb(0, 0, 0)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(0, 0, 0) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgb(252, 242, 235)",
+          "borderColor": "rgb(0, 0, 0)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(0, 0, 0) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "map-50-border": {
+        "до": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(252, 242, 235)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(0, 0, 0) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(252, 242, 235)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(0, 0, 0) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "map-50-ring": {
+        "до": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(0, 0, 0)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(252, 242, 235) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(0, 0, 0)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(252, 242, 235) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "map-100-text": {
+        "до": {
+          "color": "rgb(249, 228, 212)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(249, 228, 212)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(249, 228, 212) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(249, 228, 212)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(249, 228, 212)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(249, 228, 212)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(249, 228, 212) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(249, 228, 212)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "map-100-bg": {
+        "до": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgb(249, 228, 212)",
+          "borderColor": "rgb(0, 0, 0)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(0, 0, 0) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgb(249, 228, 212)",
+          "borderColor": "rgb(0, 0, 0)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(0, 0, 0) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "map-100-border": {
+        "до": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(249, 228, 212)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(0, 0, 0) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(249, 228, 212)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(0, 0, 0) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "map-100-ring": {
+        "до": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(0, 0, 0)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(249, 228, 212) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(0, 0, 0)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(249, 228, 212) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "map-200-text": {
+        "до": {
+          "color": "rgb(243, 199, 165)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(243, 199, 165)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(243, 199, 165) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(243, 199, 165)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(243, 199, 165)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(243, 199, 165)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(243, 199, 165) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(243, 199, 165)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "map-200-bg": {
+        "до": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgb(243, 199, 165)",
+          "borderColor": "rgb(0, 0, 0)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(0, 0, 0) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgb(243, 199, 165)",
+          "borderColor": "rgb(0, 0, 0)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(0, 0, 0) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "map-200-border": {
+        "до": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(243, 199, 165)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(0, 0, 0) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(243, 199, 165)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(0, 0, 0) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "map-200-ring": {
+        "до": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(0, 0, 0)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(243, 199, 165) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(0, 0, 0)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(243, 199, 165) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "map-300-text": {
+        "до": {
+          "color": "rgb(241, 170, 116)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(241, 170, 116)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(241, 170, 116) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(241, 170, 116)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(241, 170, 116)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(241, 170, 116)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(241, 170, 116) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(241, 170, 116)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "map-300-bg": {
+        "до": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgb(241, 170, 116)",
+          "borderColor": "rgb(0, 0, 0)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(0, 0, 0) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgb(241, 170, 116)",
+          "borderColor": "rgb(0, 0, 0)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(0, 0, 0) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "map-300-border": {
+        "до": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(241, 170, 116)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(0, 0, 0) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(241, 170, 116)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(0, 0, 0) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "map-300-ring": {
+        "до": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(0, 0, 0)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(241, 170, 116) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(0, 0, 0)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(241, 170, 116) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "map-500-text": {
+        "до": {
+          "color": "rgb(180, 83, 9)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(180, 83, 9)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(180, 83, 9) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(180, 83, 9)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(180, 83, 9)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(180, 83, 9)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(180, 83, 9) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(180, 83, 9)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "map-500-bg": {
+        "до": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgb(180, 83, 9)",
+          "borderColor": "rgb(0, 0, 0)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(0, 0, 0) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgb(180, 83, 9)",
+          "borderColor": "rgb(0, 0, 0)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(0, 0, 0) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "map-500-border": {
+        "до": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(180, 83, 9)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(0, 0, 0) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(180, 83, 9)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(0, 0, 0) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "map-500-ring": {
+        "до": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(0, 0, 0)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(180, 83, 9) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(0, 0, 0)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(180, 83, 9) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "map-600-text": {
+        "до": {
+          "color": "rgb(143, 66, 7)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(143, 66, 7)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(143, 66, 7) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(143, 66, 7)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(143, 66, 7)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(143, 66, 7)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(143, 66, 7) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(143, 66, 7)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "map-600-bg": {
+        "до": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgb(143, 66, 7)",
+          "borderColor": "rgb(0, 0, 0)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(0, 0, 0) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgb(143, 66, 7)",
+          "borderColor": "rgb(0, 0, 0)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(0, 0, 0) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "map-600-border": {
+        "до": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(143, 66, 7)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(0, 0, 0) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(143, 66, 7)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(0, 0, 0) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "map-600-ring": {
+        "до": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(0, 0, 0)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(143, 66, 7) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(0, 0, 0)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(143, 66, 7) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "map-700-text": {
+        "до": {
+          "color": "rgb(119, 55, 6)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(119, 55, 6)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(119, 55, 6) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(119, 55, 6)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(119, 55, 6)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(119, 55, 6)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(119, 55, 6) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(119, 55, 6)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "map-700-bg": {
+        "до": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgb(119, 55, 6)",
+          "borderColor": "rgb(0, 0, 0)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(0, 0, 0) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgb(119, 55, 6)",
+          "borderColor": "rgb(0, 0, 0)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(0, 0, 0) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "map-700-border": {
+        "до": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(119, 55, 6)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(0, 0, 0) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(119, 55, 6)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(0, 0, 0) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      },
+      "map-700-ring": {
+        "до": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(0, 0, 0)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(119, 55, 6) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        },
+        "после": {
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(0, 0, 0)",
+          "borderWidth": "1px",
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(119, 55, 6) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "outlineColor": "rgb(0, 0, 0)",
+          "outlineStyle": "none",
+          "outlineWidth": "0px",
+          "opacity": "1"
+        }
+      }
+    },
+    "артефакты": [
+      "/tmp/ро-акцент-разбор.md",
+      "/tmp/ро-акцент-разбор.json",
+      "/tmp/ро-акцент-потери.md",
+      "/tmp/ро-акцент-замеры/computed.json",
+      "/tmp/ро-акцент-замеры/sources.json",
+      "/tmp/ро-акцент-измерить.mjs",
+      "/tmp/ро-акцент-браузер.py"
+    ],
+    "sha256": {
+      "/tmp/ро-акцент-разбор.json": "069155535ec24283812316d9da6a363df672097ce7ae64d5b71f38e74fe1c58f",
+      "/tmp/ро-акцент-замеры/computed.json": "e8275a980d1c88399457bdd48c440119afd7ad41a6dc01e29f0bb7e3615fa836",
+      "/tmp/ро-акцент-замеры/sources.json": "fe4d9f555e647a86234be42b6c843f636d17d8266fa106b5c6f20fdf46ded9e0",
+      "/tmp/ро-акцент-измерить.mjs": "b9c1e529abcfee7f7e4e4af9512889af835e23a22ec9532d750f8541b341d37c",
+      "/tmp/ро-акцент-браузер.py": "68d81f62bc9a6b2e93f2390200404e85cd85ce9482769b29b7f5a99a3af16f71",
+      "/tmp/ро-акцент-слом.json": "70bc2e32623646b28d7b5bd453e9c085aef1ad647c517ea75f406bd9bfb82cde"
+    },
+    "охватНовогоСледа": "frontend и backend: исходники, CSS, статика, HTML/SVG писем и сборочные конфиги/скрипты; дополнительно учитываются role props, ссылки с fallback и Tailwind CSS variables. Архив 07 Внедрение не переписан. Собственные снимок и образцы слома исключены. В отдельной Docker-сборке frontend проверяется только frontend-часть.",
+    "проверкиЗамка": {
+      "самопроверкиКаждыйЗапуск": 26,
+      "CLI": "Отдельная frontend-копия: чисто → второе семейство (код 1) → чисто; другая роль с другим hex (1) → чисто; другая роль с тем же hex (1) → чисто.",
+      "лог": "/tmp/ро-акцент-слом.json",
+      "typescript": "npx tsc --noEmit: 0 ошибок",
+      "почта": "build-mail-design-tokens.mjs + --check + mail-color-check.mjs прошли",
+      "backend": "Jest: 26/26 наборов, 332/332 теста"
+    },
+    "переходTone": {
+      "дата": "2026-09-14",
+      "исходныйКоммит": "46fcf94f14d329c9e6992ed50a1f7cc8a07647fa",
+      "решение": "Прямое поручение владельца: группа А переходит на штатные пары Badge с допустимым изменением оттенка при неухудшении контраста. Группа Б ждёт решения и не меняется.",
+      "проверка": "07 Внедрение/ro/приёмка-возврат/tone/computed-colors.json: Chromium, реальные JSX/Badge/CSS; четыре пары, контраст растёт, геометрия совпадает.",
+      "разбор": [
+        {
+          "файл": "frontend/src/components/attestation/TestCard.tsx",
+          "снимокБыло": 6,
+          "фактическаяБаза": 7,
+          "стало": 5,
+          "причина": "Снимок 5db63d3 содержал className=text-accent-fg; c0b5cfb вынес подложку в tone.bg и добавил явный accent-subtle. Группа А удаляет tone.bg/fg и возвращает soft/accent. Остальные пять обращений совпадают по порядку. Палитра не менялась.",
+          "фон": "#FCF2EB → #FCF2EB",
+          "текст": "#944407 → #773706",
+          "контраст": "6.1634756919 → 8.1592596450"
+        }
+      ]
+    },
+    "переходToneГруппаБ": {
+      "дата": "2026-09-14",
+      "исходныйКоммит": "d825eba",
+      "измеренныйКоммит": "9eebea0ff8fbf0e7b9f7ab5a9f4d7507444cf05f",
+      "решение": "Владелец через thr_jrxqq5xum5: насыщенная мягкая подложка только для акцента, accent-subtle-alt/accent-fg-alt; белое наложение отклонено, выбранный счётчик переводится на существующий soft/accent.",
+      "проверка": "07 Внедрение/ro/приёмка-возврат/tone/computed-colors-final.json: Chromium, восемь изменяемых пар, десять контрольных состояний без изменения цветов/геометрии и два клика по целой ReviewerForm; 115 самопроверок замка плашек включают типовые отказы. После замены JSX-spread явными ветками тип сужается без неизвестных классов, след ролей остался прежним.",
+      "разбор": [
+        {
+          "файл": "frontend/src/components/gamification/LevelBadge.tsx",
+          "было": 2,
+          "стало": 1,
+          "основание": "Оба размера: tone заменён парой soft-emphasis/accent; #F9E4D4 прежний, #944407 → #7C3906; 5.5278298031 → 6.9843413352. Геометрия совпала."
+        },
+        {
+          "файл": "frontend/src/components/sprint/EntryStatusBadge.tsx",
+          "было": 2,
+          "стало": 1,
+          "основание": "Submitted: tone заменён soft-emphasis/accent; #F9E4D4 прежний, #944407 → #7C3906; 5.5278298031 → 6.9843413352. Геометрия совпала."
+        },
+        {
+          "файл": "frontend/src/components/sprint/ReviewerForm.tsx",
+          "было": 16,
+          "стало": 17,
+          "основание": "Добавилось color=accent у выбранного счётчика. Вместо белого 25% с белым текстом: soft/accent #FCF2EB/#773706. На кнопке #B45309 контраст текста 3.2289058883 → 8.1592596450; край 4.5528448472. Реальные клики по плашке переключили выбор дважды."
+        },
+        {
+          "файл": "frontend/src/components/ui/badge.tsx",
+          "было": 9,
+          "стало": 13,
+          "основание": "Добавлены три обращения в рецепт soft-emphasis/accent (#F9E4D4/#7C3906) и одно в ограничивающий union типа. Старые девять обращений совпадают дословно. Тип запрещает новую ступень с пятью другими цветами и без цвета."
+        }
+      ]
+    },
+    "закрытиеДолга": {
+      "исходныйКоммит": "e1aed2e",
+      "проверенныйКоммит": "38e84f3c70862b4d04fc4e10f518cd720d813b87",
+      "отчёт": "frontend/scripts/debt-audit.md",
+      "изменения": [
+        {
+          "файл": "frontend/scripts/no-raw-color.mjs",
+          "было": 4,
+          "стало": 0
+        },
+        {
+          "файл": "frontend/scripts/no-white-on-fill.mjs",
+          "было": 3,
+          "стало": 7
+        },
+        {
+          "файл": "frontend/scripts/one-focus-ring.mjs",
+          "было": 1,
+          "стало": 7
+        },
+        {
+          "файл": "frontend/src/components/admin/CreateCompanyModal.tsx",
+          "было": 7,
+          "стало": 4
+        },
+        {
+          "файл": "frontend/src/components/analytics/ErrorFrequencyChart.tsx",
+          "было": 3,
+          "стало": 2
+        },
+        {
+          "файл": "frontend/src/components/analytics/TagManager.tsx",
+          "было": 6,
+          "стало": 4
+        },
+        {
+          "файл": "frontend/src/components/attestation/GenerateTestDialog.tsx",
+          "было": 4,
+          "стало": 2
+        },
+        {
+          "файл": "frontend/src/components/crm/CrmConnectWizard.tsx",
+          "было": 12,
+          "стало": 9
+        },
+        {
+          "файл": "frontend/src/components/dashboard/CrmHintCard.tsx",
+          "было": 9,
+          "стало": 6
+        },
+        {
+          "файл": "frontend/src/components/gamification/GamificationSettingsPanel.tsx",
+          "было": 4,
+          "стало": 2
+        },
+        {
+          "файл": "frontend/src/components/playbook/PlaybookCardItem.tsx",
+          "было": 3,
+          "стало": 2
+        },
+        {
+          "файл": "frontend/src/components/playbook/PlaybookConfirmDialog.tsx",
+          "было": 4,
+          "стало": 2
+        },
+        {
+          "файл": "frontend/src/components/playbook/PlaybookDismissDialog.tsx",
+          "было": 1,
+          "стало": 0
+        },
+        {
+          "файл": "frontend/src/components/playbook/PlaybookManualCardDialog.tsx",
+          "было": 4,
+          "стало": 2
+        },
+        {
+          "файл": "frontend/src/components/settings/RopBonusSettings.tsx",
+          "было": 11,
+          "стало": 4
+        },
+        {
+          "файл": "frontend/src/components/settings/TranscriptionSettingsCard.tsx",
+          "было": 3,
+          "стало": 2
+        },
+        {
+          "файл": "frontend/src/components/sprint/AddEntryForm.tsx",
+          "было": 23,
+          "стало": 16
+        },
+        {
+          "файл": "frontend/src/components/sprint/EntryCard.tsx",
+          "было": 8,
+          "стало": 7
+        },
+        {
+          "файл": "frontend/src/components/sprint/ManagerSection.tsx",
+          "было": 14,
+          "стало": 11
+        },
+        {
+          "файл": "frontend/src/components/sprint/ReviewerForm.tsx",
+          "было": 17,
+          "стало": 13
+        },
+        {
+          "файл": "frontend/src/components/sprint/SelfReviewForm.tsx",
+          "было": 10,
+          "стало": 7
+        },
+        {
+          "файл": "frontend/src/components/sprint/SprintHeader.tsx",
+          "было": 5,
+          "стало": 2
+        },
+        {
+          "файл": "frontend/src/components/ui/InfoHint.tsx",
+          "было": 1,
+          "стало": 0
+        },
+        {
+          "файл": "frontend/src/components/ui/input.tsx",
+          "было": 2,
+          "стало": 1
+        },
+        {
+          "файл": "frontend/src/pages/admin/CompanyDetailPage.tsx",
+          "было": 84,
+          "стало": 71
+        },
+        {
+          "файл": "frontend/src/pages/AttestationTakePage.tsx",
+          "было": 4,
+          "стало": 3
+        },
+        {
+          "файл": "frontend/src/pages/LoginPage.tsx",
+          "было": 5,
+          "стало": 4
+        },
+        {
+          "файл": "frontend/src/pages/SettingsPage.tsx",
+          "было": 77,
+          "стало": 68
+        },
+        {
+          "файл": "frontend/scripts/debt-browser-results.json",
+          "было": 0,
+          "стало": 86
+        }
+      ]
+    }
+  },
+  "значения": {
+    "accent-subtle": "#FCF2EB",
+    "accent-muted": "#F3C7A5",
+    "accent": "#B45309",
+    "accent-solid": "#B45309",
+    "accent-strong": "#8F4207",
+    "accent-fg": "#944407",
+    "accent-ring": "#D16310",
+    "accent-subtle-alt": "#F9E4D4",
+    "accent-muted-alt": "#F1AA74",
+    "accent-fg-alt": "#7C3906",
+    "accent-pressed": "#773706",
+    "accent-public": "#B45309"
+  },
+  "след": {
+    "backend/src/analytics/rop-bonus-payout.scheduler.ts": [
+      "accent-solid"
+    ],
+    "backend/src/analytics/weekly-report.scheduler.ts": [
+      "accent-solid",
+      "accent-solid"
+    ],
+    "backend/src/auth/auth.service.ts": [
+      "accent-solid"
+    ],
+    "backend/src/mail/design-tokens.ts": [
+      "accent",
+      "accent-fg",
+      "accent-fg-alt",
+      "accent-muted",
+      "accent-muted-alt",
+      "accent-pressed",
+      "accent-public",
+      "accent-ring",
+      "accent-solid",
+      "accent-strong",
+      "accent-subtle",
+      "accent-subtle-alt"
+    ],
+    "backend/src/share/share.controller.ts": [
+      "accent-fg"
+    ],
+    "backend/src/share/share.service.ts": [
+      "accent-solid",
+      "accent-strong",
+      "accent-subtle",
+      "accent-muted",
+      "accent-solid",
+      "accent-strong",
+      "accent-fg"
+    ],
+    "frontend/scripts/debt-browser-results.json": [
+      "accent-ring",
+      "accent-ring",
+      "accent-ring",
+      "accent-ring",
+      "accent-ring",
+      "accent-ring",
+      "accent-strong",
+      "accent-fg",
+      "accent-ring",
+      "accent-strong",
+      "accent-fg",
+      "accent-solid",
+      "accent-strong",
+      "accent-ring",
+      "accent-solid",
+      "accent-strong",
+      "accent-ring",
+      "accent-ring",
+      "accent-ring",
+      "accent",
+      "accent-ring",
+      "accent-ring",
+      "accent-ring",
+      "accent-ring",
+      "accent",
+      "accent-ring",
+      "accent-ring",
+      "accent-ring",
+      "accent-ring",
+      "accent-ring",
+      "accent-ring",
+      "accent-ring",
+      "accent-strong",
+      "accent-muted",
+      "accent-subtle",
+      "accent-ring",
+      "accent-strong",
+      "accent-muted",
+      "accent-subtle",
+      "accent-strong",
+      "accent-muted",
+      "accent-subtle",
+      "accent-ring",
+      "accent-strong",
+      "accent-muted",
+      "accent-subtle",
+      "accent-strong",
+      "accent-ring",
+      "accent-strong",
+      "accent-ring",
+      "accent-ring",
+      "accent-ring",
+      "accent-ring",
+      "accent-ring",
+      "accent-strong",
+      "accent-fg",
+      "accent-ring",
+      "accent-strong",
+      "accent-fg",
+      "accent",
+      "accent-ring",
+      "accent-subtle-alt",
+      "accent-ring",
+      "accent-ring",
+      "accent",
+      "accent",
+      "accent-solid",
+      "accent",
+      "accent-solid",
+      "accent-ring",
+      "accent-ring",
+      "accent-ring",
+      "accent-ring",
+      "accent-ring",
+      "accent-ring",
+      "accent-ring",
+      "accent-subtle",
+      "accent",
+      "accent",
+      "accent",
+      "accent",
+      "accent-subtle",
+      "accent",
+      "accent",
+      "accent-ring",
+      "accent-ring"
+    ],
+    "frontend/scripts/no-lossy-cn.mjs": [
+      "accent-ring",
+      "accent-ring"
+    ],
+    "frontend/scripts/no-white-on-fill.mjs": [
+      "accent",
+      "accent-solid",
+      "accent-strong",
+      "accent-pressed",
+      "accent-public",
+      "accent-ring",
+      "accent-muted-alt"
+    ],
+    "frontend/scripts/one-focus-ring.mjs": [
+      "accent-ring",
+      "accent",
+      "accent",
+      "accent",
+      "accent",
+      "accent",
+      "accent-pressed"
+    ],
+    "frontend/src/App.tsx": [
+      "accent-muted",
+      "accent"
+    ],
+    "frontend/src/components/ErrorBoundary.tsx": [
+      "accent-solid",
+      "accent-strong"
+    ],
+    "frontend/src/components/access/PaymentHold.tsx": [
+      "accent-subtle",
+      "accent-solid"
+    ],
+    "frontend/src/components/admin/CompanyPicker.tsx": [
+      "accent"
+    ],
+    "frontend/src/components/admin/CreateCompanyModal.tsx": [
+      "accent-solid",
+      "accent-solid",
+      "accent-solid",
+      "accent-strong"
+    ],
+    "frontend/src/components/admin/NormPresetPicker.tsx": [
+      "accent-subtle",
+      "accent",
+      "accent",
+      "accent-muted-alt",
+      "accent-subtle",
+      "accent",
+      "accent-strong"
+    ],
+    "frontend/src/components/admin/TrackersSection.tsx": [
+      "accent",
+      "accent-strong",
+      "accent-muted",
+      "accent-subtle",
+      "accent-muted",
+      "accent-subtle",
+      "accent-fg-alt",
+      "accent-solid",
+      "accent-strong",
+      "accent-solid",
+      "accent-strong",
+      "accent-strong",
+      "accent-strong"
+    ],
+    "frontend/src/components/admin/WatchdogsSection.tsx": [
+      "accent"
+    ],
+    "frontend/src/components/analytics/ActivityPatternsChart.tsx": [
+      "accent-solid",
+      "accent-solid"
+    ],
+    "frontend/src/components/analytics/ErrorFrequencyChart.tsx": [
+      "accent-strong",
+      "accent-subtle"
+    ],
+    "frontend/src/components/analytics/ErrorTrendChart.tsx": [
+      "accent-strong",
+      "accent",
+      "accent-solid"
+    ],
+    "frontend/src/components/analytics/ManagerStatsTable.tsx": [
+      "accent-solid"
+    ],
+    "frontend/src/components/analytics/ReviewerStatsCard.tsx": [
+      "accent-subtle",
+      "accent",
+      "accent-strong"
+    ],
+    "frontend/src/components/analytics/TagManager.tsx": [
+      "accent-solid",
+      "accent-strong",
+      "accent-strong",
+      "accent-fg"
+    ],
+    "frontend/src/components/attestation/GenerateTestDialog.tsx": [
+      "accent-solid",
+      "accent-strong"
+    ],
+    "frontend/src/components/attestation/TestCard.tsx": [
+      "accent",
+      "accent",
+      "accent-ring",
+      "accent-solid",
+      "accent-strong"
+    ],
+    "frontend/src/components/auth/ProtectedRoute.tsx": [
+      "accent"
+    ],
+    "frontend/src/components/crm/CrmConnectWizard.tsx": [
+      "accent",
+      "accent",
+      "accent-subtle",
+      "accent-muted-alt",
+      "accent-solid",
+      "accent-strong",
+      "accent-strong",
+      "accent-fg",
+      "accent-solid"
+    ],
+    "frontend/src/components/dashboard/CrmHintCard.tsx": [
+      "accent-subtle",
+      "accent",
+      "accent-strong",
+      "accent-fg",
+      "accent-solid",
+      "accent-strong"
+    ],
+    "frontend/src/components/dashboard/DeadlineCountdownBanner.tsx": [
+      "accent-subtle",
+      "accent-muted-alt",
+      "accent",
+      "accent-solid"
+    ],
+    "frontend/src/components/dashboard/OwnerStateCard.tsx": [
+      "accent-solid",
+      "accent-strong"
+    ],
+    "frontend/src/components/dashboard/ReportChannelsConfirmCard.tsx": [
+      "accent-solid",
+      "accent-strong"
+    ],
+    "frontend/src/components/dashboard/RopBonusCard.tsx": [
+      "accent",
+      "accent-solid",
+      "accent",
+      "accent-subtle-alt",
+      "accent",
+      "accent",
+      "accent-strong",
+      "accent-fg",
+      "accent-strong"
+    ],
+    "frontend/src/components/dashboard/RopBonusProposalCard.tsx": [
+      "accent-muted",
+      "accent-muted",
+      "accent-subtle",
+      "accent-solid",
+      "accent-public",
+      "accent-solid",
+      "accent-public",
+      "accent",
+      "accent-muted",
+      "accent-subtle"
+    ],
+    "frontend/src/components/gamification/AchievementBadge.tsx": [
+      "accent-subtle-alt",
+      "accent-subtle"
+    ],
+    "frontend/src/components/gamification/GamificationPanel.tsx": [
+      "accent-subtle",
+      "accent-subtle-alt",
+      "accent-fg-alt",
+      "accent",
+      "accent"
+    ],
+    "frontend/src/components/gamification/GamificationSettingsPanel.tsx": [
+      "accent-solid",
+      "accent-strong"
+    ],
+    "frontend/src/components/gamification/Leaderboard.tsx": [
+      "accent-ring",
+      "accent-strong"
+    ],
+    "frontend/src/components/gamification/LevelBadge.tsx": [
+      "accent"
+    ],
+    "frontend/src/components/gamification/StreakBadge.tsx": [
+      "accent-strong",
+      "accent-subtle",
+      "accent-fg",
+      "accent-muted"
+    ],
+    "frontend/src/components/gamification/XpBar.tsx": [
+      "accent-ring",
+      "accent-solid"
+    ],
+    "frontend/src/components/layout/AppLayout.tsx": [
+      "accent-solid"
+    ],
+    "frontend/src/components/layout/Sidebar.tsx": [
+      "accent-solid",
+      "accent-ring"
+    ],
+    "frontend/src/components/notifications/NotificationBell.tsx": [
+      "accent-solid",
+      "accent",
+      "accent-subtle",
+      "accent-solid"
+    ],
+    "frontend/src/components/onboarding/FirstStepsCard.tsx": [
+      "accent-muted",
+      "accent-solid",
+      "accent-strong",
+      "accent-fg",
+      "accent-subtle",
+      "accent"
+    ],
+    "frontend/src/components/onboarding/UserTour.tsx": [
+      "accent-solid",
+      "accent-subtle",
+      "accent",
+      "accent-solid",
+      "accent-strong",
+      "accent-solid",
+      "accent-strong"
+    ],
+    "frontend/src/components/onboarding/WhatsNewModal.tsx": [
+      "accent-subtle",
+      "accent",
+      "accent-pressed",
+      "accent-solid",
+      "accent-subtle",
+      "accent",
+      "accent-solid",
+      "accent-strong",
+      "accent-solid",
+      "accent-strong"
+    ],
+    "frontend/src/components/playbook/PlaybookCandidateCard.tsx": [
+      "accent-muted",
+      "accent-subtle",
+      "accent-subtle-alt",
+      "accent",
+      "accent-fg",
+      "accent-muted",
+      "accent-strong",
+      "accent-solid",
+      "accent-strong"
+    ],
+    "frontend/src/components/playbook/PlaybookCardItem.tsx": [
+      "accent-solid",
+      "accent-strong"
+    ],
+    "frontend/src/components/playbook/PlaybookConfirmDialog.tsx": [
+      "accent-solid",
+      "accent-strong"
+    ],
+    "frontend/src/components/playbook/PlaybookManualCardDialog.tsx": [
+      "accent-solid",
+      "accent-strong"
+    ],
+    "frontend/src/components/playbook/PlaybookProgressBar.tsx": [
+      "accent-solid"
+    ],
+    "frontend/src/components/settings/ChangePasswordCard.tsx": [
+      "accent-strong",
+      "accent-fg",
+      "accent",
+      "accent",
+      "accent-solid",
+      "accent-strong"
+    ],
+    "frontend/src/components/settings/CrmIntegrationSettings.tsx": [
+      "accent",
+      "accent",
+      "accent-subtle",
+      "accent-solid",
+      "accent-solid",
+      "accent-strong",
+      "accent-solid",
+      "accent-strong"
+    ],
+    "frontend/src/components/settings/RopBonusSettings.tsx": [
+      "accent-solid",
+      "accent-strong",
+      "accent-subtle",
+      "accent-solid"
+    ],
+    "frontend/src/components/settings/SettingsPresets.tsx": [
+      "accent-subtle",
+      "accent-muted",
+      "accent",
+      "accent",
+      "accent-muted-alt",
+      "accent-subtle",
+      "accent",
+      "accent-subtle",
+      "accent-strong"
+    ],
+    "frontend/src/components/settings/TelegramLinkButton.tsx": [
+      "accent-solid",
+      "accent-strong",
+      "accent-muted",
+      "accent-strong"
+    ],
+    "frontend/src/components/settings/TranscriptionSettingsCard.tsx": [
+      "accent-solid",
+      "accent-solid"
+    ],
+    "frontend/src/components/sprint/AddEntryForm.tsx": [
+      "accent-muted",
+      "accent-strong",
+      "accent-fg",
+      "accent-subtle-alt",
+      "accent-solid",
+      "accent-subtle-alt",
+      "accent-strong",
+      "accent-muted-alt",
+      "accent-strong",
+      "accent-fg",
+      "accent-subtle",
+      "accent-strong",
+      "accent-fg",
+      "accent-subtle",
+      "accent-solid",
+      "accent-strong"
+    ],
+    "frontend/src/components/sprint/AudioDropzone.tsx": [
+      "accent-subtle-alt",
+      "accent-strong",
+      "accent-ring",
+      "accent-subtle",
+      "accent-muted-alt"
+    ],
+    "frontend/src/components/sprint/CrmCallPicker.tsx": [
+      "accent-solid",
+      "accent-strong",
+      "accent-muted-alt",
+      "accent-subtle"
+    ],
+    "frontend/src/components/sprint/EntryCard.tsx": [
+      "accent",
+      "accent-ring",
+      "accent-strong",
+      "accent-subtle",
+      "accent-strong",
+      "accent-subtle",
+      "accent-muted"
+    ],
+    "frontend/src/components/sprint/EntryStatusBadge.tsx": [
+      "accent"
+    ],
+    "frontend/src/components/sprint/ImageDropzone.tsx": [
+      "accent-muted-alt",
+      "accent-subtle"
+    ],
+    "frontend/src/components/sprint/ManagerSection.tsx": [
+      "accent",
+      "accent-strong",
+      "accent-muted",
+      "accent-subtle",
+      "accent-strong",
+      "accent-muted",
+      "accent-subtle",
+      "accent-strong",
+      "accent-muted",
+      "accent-subtle"
+    ],
+    "frontend/src/components/sprint/ProgressIndicator.tsx": [
+      "accent-solid"
+    ],
+    "frontend/src/components/sprint/ReviewerForm.tsx": [
+      "accent",
+      "accent-solid",
+      "accent-strong",
+      "accent-subtle",
+      "accent-fg",
+      "accent-strong",
+      "accent-solid",
+      "accent-strong",
+      "accent-solid",
+      "accent-strong",
+      "accent-strong",
+      "accent-solid",
+      "accent-strong"
+    ],
+    "frontend/src/components/sprint/ScreenshotGallery.tsx": [
+      "accent-muted-alt"
+    ],
+    "frontend/src/components/sprint/SelfReviewForm.tsx": [
+      "accent-strong",
+      "accent-muted",
+      "accent-subtle",
+      "accent-fg-alt",
+      "accent-strong",
+      "accent-subtle",
+      "accent-muted"
+    ],
+    "frontend/src/components/sprint/SourceSelector.tsx": [
+      "accent-solid",
+      "accent",
+      "accent-muted-alt"
+    ],
+    "frontend/src/components/sprint/SprintHeader.tsx": [
+      "accent-strong",
+      "accent-fg"
+    ],
+    "frontend/src/components/sprint/TranscriptionStatusBadge.tsx": [
+      "accent",
+      "accent",
+      "accent-ring",
+      "accent-solid",
+      "accent-strong",
+      "accent-strong",
+      "accent-fg",
+      "accent-strong",
+      "accent-fg",
+      "accent-strong",
+      "accent-subtle",
+      "accent-solid",
+      "accent-strong"
+    ],
+    "frontend/src/components/sprint/TranscriptionView.tsx": [
+      "accent-subtle",
+      "accent-strong",
+      "accent-fg",
+      "accent-subtle",
+      "accent-strong",
+      "accent-fg"
+    ],
+    "frontend/src/components/ui/EmptyState.tsx": [
+      "accent-subtle",
+      "accent-strong"
+    ],
+    "frontend/src/components/ui/avatar.tsx": [
+      "accent-solid"
+    ],
+    "frontend/src/components/ui/badge.tsx": [
+      "accent",
+      "accent-solid",
+      "accent-solid",
+      "accent",
+      "accent-muted",
+      "accent-fg",
+      "accent",
+      "accent-subtle",
+      "accent-pressed",
+      "accent",
+      "accent-subtle-alt",
+      "accent-fg-alt",
+      "accent"
+    ],
+    "frontend/src/components/ui/button.tsx": [
+      "accent-solid",
+      "accent-strong",
+      "accent-subtle",
+      "accent-pressed",
+      "accent-subtle-alt"
+    ],
+    "frontend/src/components/ui/input.tsx": [
+      "accent-ring"
+    ],
+    "frontend/src/index.css": [
+      "accent-subtle",
+      "accent-muted",
+      "accent",
+      "accent-solid",
+      "accent-strong",
+      "accent-fg",
+      "accent-ring",
+      "accent-subtle-alt",
+      "accent-muted-alt",
+      "accent-fg-alt",
+      "accent-pressed",
+      "accent-public",
+      "accent-ring"
+    ],
+    "frontend/src/lib/tailwind-merge-config.js": [
+      "accent-subtle",
+      "accent-muted",
+      "accent",
+      "accent-solid",
+      "accent-strong",
+      "accent-fg",
+      "accent-ring",
+      "accent-subtle-alt",
+      "accent-muted-alt",
+      "accent-fg-alt",
+      "accent-pressed",
+      "accent-public"
+    ],
+    "frontend/src/pages/ActivatePage.tsx": [
+      "accent-strong",
+      "accent-fg"
+    ],
+    "frontend/src/pages/AnalyticsPage.tsx": [
+      "accent-solid",
+      "accent-strong"
+    ],
+    "frontend/src/pages/AttestationPage.tsx": [
+      "accent",
+      "accent-muted-alt",
+      "accent-strong",
+      "accent",
+      "accent-solid",
+      "accent-strong"
+    ],
+    "frontend/src/pages/AttestationReviewPage.tsx": [
+      "accent-muted",
+      "accent-subtle",
+      "accent",
+      "accent-fg",
+      "accent-fg-alt",
+      "accent-solid",
+      "accent",
+      "accent-solid",
+      "accent-strong"
+    ],
+    "frontend/src/pages/AttestationTakePage.tsx": [
+      "accent",
+      "accent-solid",
+      "accent-strong"
+    ],
+    "frontend/src/pages/DashboardPage.tsx": [
+      "accent",
+      "accent-solid",
+      "accent-strong",
+      "accent",
+      "accent-strong",
+      "accent-subtle",
+      "accent-strong",
+      "accent-fg",
+      "accent-subtle",
+      "accent-muted",
+      "accent-fg-alt",
+      "accent-strong",
+      "accent-solid",
+      "accent-strong",
+      "accent",
+      "accent-subtle-alt",
+      "accent-fg",
+      "accent-ring",
+      "accent-ring",
+      "accent-strong",
+      "accent-subtle-alt",
+      "accent-subtle"
+    ],
+    "frontend/src/pages/InvitePage.tsx": [
+      "accent-solid",
+      "accent-public",
+      "accent",
+      "accent-subtle",
+      "accent-muted",
+      "accent-solid",
+      "accent-public",
+      "accent",
+      "accent",
+      "accent",
+      "accent",
+      "accent",
+      "accent",
+      "accent-solid",
+      "accent-public",
+      "accent"
+    ],
+    "frontend/src/pages/LoginPage.tsx": [
+      "accent-ring",
+      "accent-ring",
+      "accent",
+      "accent-solid"
+    ],
+    "frontend/src/pages/ManualPage.tsx": [
+      "accent-strong",
+      "accent-ring",
+      "accent-subtle",
+      "accent-strong",
+      "accent-muted",
+      "accent-subtle",
+      "accent-subtle",
+      "accent",
+      "accent-fg"
+    ],
+    "frontend/src/pages/OfferPage.tsx": [
+      "accent-solid",
+      "accent-public",
+      "accent-solid",
+      "accent-public",
+      "accent",
+      "accent-subtle",
+      "accent-muted",
+      "accent",
+      "accent",
+      "accent",
+      "accent",
+      "accent",
+      "accent",
+      "accent",
+      "accent",
+      "accent-solid",
+      "accent-solid",
+      "accent-solid",
+      "accent-public"
+    ],
+    "frontend/src/pages/PdnConsentPage.tsx": [
+      "accent",
+      "accent-subtle",
+      "accent-muted",
+      "accent-solid",
+      "accent-solid",
+      "accent-solid",
+      "accent-public"
+    ],
+    "frontend/src/pages/PlaybookPage.tsx": [
+      "accent-solid",
+      "accent-strong",
+      "accent"
+    ],
+    "frontend/src/pages/ResetPasswordPage.tsx": [
+      "accent-strong",
+      "accent-fg"
+    ],
+    "frontend/src/pages/RopBonusOfferPage.tsx": [
+      "accent-solid",
+      "accent-public",
+      "accent",
+      "accent-solid",
+      "accent-public",
+      "accent",
+      "accent-subtle",
+      "accent-muted",
+      "accent-muted",
+      "accent-solid",
+      "accent-public",
+      "accent",
+      "accent",
+      "accent",
+      "accent-solid",
+      "accent-public",
+      "accent",
+      "accent",
+      "accent-solid",
+      "accent-public"
+    ],
+    "frontend/src/pages/SettingsPage.tsx": [
+      "accent-solid",
+      "accent-ring",
+      "accent",
+      "accent-fg",
+      "accent-ring",
+      "accent",
+      "accent-ring",
+      "accent-solid",
+      "accent-strong",
+      "accent-solid",
+      "accent-solid",
+      "accent-strong",
+      "accent",
+      "accent-fg",
+      "accent-subtle",
+      "accent-muted",
+      "accent-subtle",
+      "accent-solid",
+      "accent-strong",
+      "accent-solid",
+      "accent-strong",
+      "accent-strong",
+      "accent",
+      "accent-strong",
+      "accent-fg",
+      "accent-strong",
+      "accent-fg",
+      "accent-ring",
+      "accent-solid",
+      "accent-strong",
+      "accent-solid",
+      "accent-solid",
+      "accent-ring",
+      "accent-solid",
+      "accent-ring",
+      "accent",
+      "accent",
+      "accent-solid",
+      "accent-strong",
+      "accent-solid",
+      "accent-strong",
+      "accent-solid",
+      "accent-strong",
+      "accent",
+      "accent-fg",
+      "accent-subtle",
+      "accent-muted",
+      "accent-subtle",
+      "accent-solid",
+      "accent-strong",
+      "accent-solid",
+      "accent-strong",
+      "accent-strong",
+      "accent-solid",
+      "accent-strong",
+      "accent-strong",
+      "accent-muted",
+      "accent-subtle",
+      "accent-strong",
+      "accent-muted",
+      "accent-subtle",
+      "accent-strong",
+      "accent-fg",
+      "accent-solid",
+      "accent-strong",
+      "accent",
+      "accent",
+      "accent",
+      "accent-solid",
+      "accent-public"
+    ],
+    "frontend/src/pages/SprintBoardPage.tsx": [
+      "accent",
+      "accent",
+      "accent-solid",
+      "accent-strong",
+      "accent-solid",
+      "accent-strong"
+    ],
+    "frontend/src/pages/admin/CompanyDetailPage.tsx": [
+      "accent",
+      "accent-subtle",
+      "accent-subtle",
+      "accent-muted",
+      "accent-solid",
+      "accent-strong",
+      "accent-subtle",
+      "accent-ring",
+      "accent-muted-alt",
+      "accent-fg",
+      "accent-subtle",
+      "accent-solid",
+      "accent-strong",
+      "accent-solid",
+      "accent-strong",
+      "accent-strong",
+      "accent-fg",
+      "accent-strong",
+      "accent-muted",
+      "accent-subtle",
+      "accent-subtle",
+      "accent-ring",
+      "accent-strong",
+      "accent-muted",
+      "accent-subtle",
+      "accent-solid",
+      "accent-strong",
+      "accent-muted-alt",
+      "accent-fg",
+      "accent-subtle-alt",
+      "accent-solid",
+      "accent-strong",
+      "accent-solid",
+      "accent-strong",
+      "accent-subtle",
+      "accent-muted-alt",
+      "accent",
+      "accent-strong",
+      "accent-solid",
+      "accent-strong",
+      "accent-solid",
+      "accent-solid",
+      "accent-strong",
+      "accent-strong",
+      "accent-fg",
+      "accent-solid",
+      "accent-strong",
+      "accent-muted-alt",
+      "accent-fg",
+      "accent-subtle",
+      "accent-muted-alt",
+      "accent",
+      "accent-ring",
+      "accent-solid",
+      "accent-strong",
+      "accent-ring",
+      "accent-solid",
+      "accent-strong",
+      "accent-solid",
+      "accent-strong",
+      "accent-strong",
+      "accent-muted",
+      "accent-subtle",
+      "accent-strong",
+      "accent-muted",
+      "accent-subtle",
+      "accent-strong",
+      "accent-muted",
+      "accent-subtle",
+      "accent-solid",
+      "accent-strong"
+    ],
+    "frontend/src/pages/admin/SuperAdminDashboard.tsx": [
+      "accent",
+      "accent-subtle-alt",
+      "accent-fg",
+      "accent",
+      "accent-strong",
+      "accent-fg",
+      "accent-solid",
+      "accent-strong",
+      "accent"
+    ]
+  }
+}

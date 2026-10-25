@@ -1,0 +1,14 @@
+node_modules
+dist
+*.md
+.env
+.env.*
+.git
+.gitignore
+coverage
+.nyc_output
+# TypeScript incremental build cache — must NOT enter Docker context
+# (stale cache causes tsc to skip JS emission → dist/main.js not generated)
+tsconfig.tsbuildinfo
+*.tsbuildinfo
+uploads

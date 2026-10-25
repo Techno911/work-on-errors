@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# TypeScript incremental build cache
+tsconfig.tsbuildinfo
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Uploaded files (mounted as Docker volume in production)
+uploads/
+
+# Logs
+*.log
+analytics.log*
+npm-debug.log*
+
+# Тесты
+coverage/
+
+# OS
+.DS_Store

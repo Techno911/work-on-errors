@@ -1,0 +1,61 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies
+node_modules
+
+# Build output
+dist
+dist-ssr
+
+# Local env files
+*.local
+.env
+.env.local
+.env.production
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Backend
+backend/dist
+backend/uploads/screenshots/*
+!backend/uploads/screenshots/.gitkeep
+
+# Frontend
+frontend/dist
+*.tsbuildinfo
+
+# Docker
+postgres_data
+
+# Playwright MCP test artifacts
+.playwright-mcp/
+backend/uploads/audio/*
+kdm-after-delete.png
+
+# Отладочный побочный файл render-og-image.mjs (координаты рамок для проверки
+# клиппинга при рендере). Не читается ничем в коде, регенерируется при каждом
+# прогоне рендерера — второй носитель того же og-image.png, а не источник знания.
+frontend/public/*.metrics.json
+
+# Acceptance images are archived outside Git; keep reports, scripts and metrics.
+/07 Внедрение/ro/**/*.png
+/07 Внедрение/ro/**/*.jpg
+/07 Внедрение/ro/**/*.jpeg
+/07 Внедрение/ro/**/*.webp
+ds/перепись-*/

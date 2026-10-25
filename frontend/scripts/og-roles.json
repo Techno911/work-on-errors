@@ -1,0 +1,8 @@
+{
+  "_источник": "Роли @chirkov/shell 0.3.2 (theme.css/tokens.css), развёрнутые до литерала 23.09.2026. OG-рендер работает и в изолированной песочнице static-brand-assets-check.mjs --selftest, которая копирует только scripts/public/src без node_modules — поэтому значения зафиксированы файлом, а не читаются из пакета в рантайме. Перегенерировать после апгрейда пакета: node --input-type=module -e \"import{packageThemeCss}from'./scripts/gate-shared.mjs';import{readRoles}from'./scripts/no-white-on-fill.mjs';const r=readRoles(packageThemeCss());for(const k of ['inverse','on-inverse','on-inverse-muted','inverse-hover','inverse-divider'])console.log(k,r.get(k))\" из frontend/, затем переписать значения ниже.",
+  "inverse": "#1a1a1a",
+  "on-inverse": "#ffffff",
+  "on-inverse-muted": "#a8a29e",
+  "inverse-hover": "#2a2a2a",
+  "inverse-divider": "#ffffff26"
+}
